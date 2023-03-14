@@ -1,0 +1,38 @@
+._ {
+    display: inherit;
+    /*flex-direction: column;*/
+    justify-content: inherit;
+    align-items: inherit;
+    font-size: 0.85rem;
+    max-width: var(--max-width);
+    width: 100%;
+    height: calc(100vh - 10rem);
+    z-index: 2;
+}
+
+.descriptionBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 48%;
+    height: 100%;
+}
+
+.descriptionImage {
+    width: 100%;
+    border: solid white;
+    border-radius: 2rem;
+}
+
+.par {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

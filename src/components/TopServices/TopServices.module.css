@@ -1,0 +1,33 @@
+._ {
+    height: 100vh;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.services {
+    display: flex;
+}
+.img {
+    height: 15rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.service:hover  {
+    -webkit-box-shadow: 1px 1px 15px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px 1px 15px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 1px 15px 5px rgba(34, 60, 80, 0.2);
+}
+
+.desc {
+    height: calc(100% - 5rem);
+}

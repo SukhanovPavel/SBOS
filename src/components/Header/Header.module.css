@@ -1,0 +1,58 @@
+._ {
+    display: flex;
+    width: 100%;
+    height: 7rem;
+    background: whitesmoke;
+    padding: 1rem;
+}
+
+.headerBlock {
+    width: 25%;
+    display: flex;
+    /*color: #d72c2c;*/
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    align-items: flex-start;
+    font-family: var(--font-mono);
+}
+
+.logoButton {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    color: #d72c2c;
+    width: 100%;
+    height: 100%;
+}
+
+.headerBlock p {
+    font-style: normal;
+}
+
+.logo {
+    fill: #d72c2c;
+    border-radius: 1rem;
+    height: 70%;
+}
+
+/*.button {*/
+/*    width: 10rem;*/
+/*    height: 3rem;*/
+/*    background: #d72c2c;*/
+/*    border-radius: 1rem;*/
+/*    color: white;*/
+/*}*/
+
+/*@media (prefers-color-scheme: dark) {*/
+/*    ._ {*/
+/*        filter: invert(1);*/
+/*    }*/
+
+/*    .logo,*/
+/*    .headerBlock {*/
+/*        filter: invert(1) drop-shadow(0 0 0.3rem white);*/
+/*    }*/
+/*}*/
