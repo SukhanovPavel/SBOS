@@ -36,19 +36,19 @@ export default function Home() {
 
           <Calc />
 
-          <Sets />
+          <Sets handleClick={() => openModal(true)}/>
 
           <TopServices />
 
           <WorkScheme />
 
-          <AboutInstall />
+          <AboutInstall handleClick={() => openModal(true)}/>
 
           <Advantages />
 
           <Answers />
 
-          <Contacts />
+          <Contacts handleClick={() => openModal(true)} />
 
           {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
       </main>

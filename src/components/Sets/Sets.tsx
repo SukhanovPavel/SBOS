@@ -17,7 +17,11 @@ export const X = <svg className={styles.svgX} xmlns="http://www.w3.org/2000/svg"
       12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
 </svg>;
 
-export const Sets = () => (
+type Props = {
+    handleClick: () => void;
+}
+
+export const Sets = ({handleClick}: Props) => (
     <div className={styles._}>
         <h2>ВИДЕОНАБЛЮДЕНИЕ ГОТОВЫЕ КОМПЛЕКТЫ</h2>
         <div className={styles.sets}>
@@ -37,7 +41,7 @@ export const Sets = () => (
                 </div>
                 <div>
                     <div className={styles.flex}>От<h2>29 990</h2>руб</div>
-                    <button>Оставить заявку</button>
+                    <button onClick={handleClick}>Оставить заявку</button>
                 </div>
             </div>
             <div className={styles.shadow}>
@@ -53,7 +57,7 @@ export const Sets = () => (
                 </div>
                 <div>
                     <div className={styles.flex}>От<h2>34 990</h2>руб</div>
-                    <button>Оставить заявку</button>
+                    <button onClick={handleClick}>Оставить заявку</button>
                 </div>
             </div>
             <div className={styles.set}>
@@ -69,7 +73,7 @@ export const Sets = () => (
                 </div>
                 <div>
                     <div className={styles.flex}>От<h2>44 990</h2>руб</div>
-                    <button>Оставить заявку</button>
+                    <button onClick={handleClick}>Оставить заявку</button>
                 </div>
             </div>
         </div>

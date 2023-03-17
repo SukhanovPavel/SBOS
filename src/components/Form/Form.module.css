@@ -1,0 +1,33 @@
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    /*align-items: start;*/
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 12rem;
+}
+
+.input input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1rem;
+}
+
+.borderBlue:focus-visible {
+
+    border: solid cornflowerblue 0.3rem;
+}
+
+.borderRed {
+    border: solid #d72c2c 0.3rem;
+}

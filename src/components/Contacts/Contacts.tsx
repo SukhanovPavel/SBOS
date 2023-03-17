@@ -2,7 +2,11 @@ import {Map, Placemark} from "@pbe/react-yandex-maps";
 
 import styles from "./Contacts.module.css";
 
-export const Contacts = () => (
+type Props = {
+    handleClick: () => void;
+}
+
+export const Contacts = ({handleClick}: Props) => (
     <div className={styles._}>
         <div className={styles.block}>
             <div>Контакты</div>
@@ -22,7 +26,7 @@ export const Contacts = () => (
                 <div>Email</div>
                 <div>mail@sbos.ru</div>
             </div>
-            <button>Обратный звонок</button>
+            <button onClick={handleClick}>Обратный звонок</button>
         </div>
         <div className={styles.block}>
             <Map

@@ -2,7 +2,11 @@
 
 import styles from "./AboutInstall.module.css";
 
-export const AboutInstall = () => (
+type Props = {
+    handleClick: () => void;
+}
+
+export const AboutInstall = ({handleClick}: Props) => (
     <div className={styles._}>
         <h2>УСТАНОВКА СИСТЕМ ВИДЕОНАБЛЮДЕНИЯ</h2>
         <div className={styles.blocks}>
@@ -17,7 +21,7 @@ export const AboutInstall = () => (
                     разного профиля: монтажники, электрики технологи. Мастера умеют работать со сложными системами
                     видеонаблюдения. Обращайтесь, мы сделаем работу качественно и недорого.
                 </p>
-                <button>Бесплатная консультация</button>
+                <button onClick={handleClick}>Бесплатная консультация</button>
             </div>
         </div>
     </div>

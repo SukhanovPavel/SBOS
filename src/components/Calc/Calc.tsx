@@ -1,5 +1,6 @@
 import styles from "./Calc.module.css";
 import {useState} from "react";
+import {Form} from "@/components/Form/Form";
 
 
 export const Calc = () => {
@@ -27,7 +28,7 @@ export const Calc = () => {
                                 src="https://videonablydenie.ru/assets/img/calc/calc3-min.jpg"
                             />}
                     </div>
-                    <h2>В стоимость входит</h2>
+                    <h3>В стоимость входит:</h3>
                     <ul className={styles.calcList}>
                         <li>Проектирование проекта</li>
                         <li>Профессиональное оборудование и расходники</li>
@@ -64,28 +65,30 @@ export const Calc = () => {
                     <div className={styles.calcColumn}>
                         <h3>2. Выберите разрешение камер</h3>
                         <div className={styles.flex}>
-                            <input
-                                className={styles.checkbox}
-                                type="checkbox"
-                                checked={changed.bad}
-                                onChange={() => setChange({
-                                    bad: true,
-                                    gud: false
-                                })}
-                            />
-                            Хорошее (IP)
-                        </div>
-                        <div className={styles.flex}>
-                            <input
-                                className={styles.checkbox}
-                                type="checkbox"
-                                checked={changed.gud}
-                                onChange={() => setChange({
-                                    bad: false,
-                                    gud: true
-                                })}
-                            />
-                            Высокое (HD)
+                            <div className={styles.flex}>
+                                <input
+                                    className={styles.checkbox}
+                                    type="checkbox"
+                                    checked={changed.bad}
+                                    onChange={() => setChange({
+                                        bad: true,
+                                        gud: false
+                                    })}
+                                />
+                                Хорошее (IP)
+                            </div>
+                            <div className={styles.flex}>
+                                <input
+                                    className={styles.checkbox}
+                                    type="checkbox"
+                                    checked={changed.gud}
+                                    onChange={() => setChange({
+                                        bad: false,
+                                        gud: true
+                                    })}
+                                />
+                                Высокое (HD)
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -97,30 +100,31 @@ export const Calc = () => {
                         оценщика. Для Москвы услуга бесплатна. Стоимость выезда оценщика по Московской области
                         обсуждается по телефону.
                     </div>
-                    <form className={styles.calcColumn}>
-                        <label htmlFor="name">Имя</label>
-                        <input
-                            id="name"
-                            name="name"
-                            type="text"
-                            placeholder="  Имя"
-                            className={styles.inputs}
-                        />
-                        <label htmlFor="phone">Телефон</label>
-                        <input
-                            id="phone"
-                            name="phone"
-                            type="text"
-                            placeholder="  Телефон"
-                            className={styles.inputs}
-                            minLength={10}
-                            maxLength={11}
-                            required
-                        />
-                        <button type="submit" className={styles.inputs}>
-                            Отправить
-                        </button>
-                    </form>
+                    <Form handleCloseModal={() => {return null}} />
+                    {/*<form className={styles.calcColumn}>*/}
+                    {/*    <label htmlFor="name">Имя</label>*/}
+                    {/*    <input*/}
+                    {/*        id="name"*/}
+                    {/*        name="name"*/}
+                    {/*        type="text"*/}
+                    {/*        placeholder="  Имя"*/}
+                    {/*        className={styles.inputs}*/}
+                    {/*    />*/}
+                    {/*    <label htmlFor="phone">Телефон</label>*/}
+                    {/*    <input*/}
+                    {/*        id="phone"*/}
+                    {/*        name="phone"*/}
+                    {/*        type="text"*/}
+                    {/*        placeholder="  Телефон"*/}
+                    {/*        className={styles.inputs}*/}
+                    {/*        minLength={10}*/}
+                    {/*        maxLength={11}*/}
+                    {/*        required*/}
+                    {/*    />*/}
+                    {/*    <button type="submit" className={styles.inputs}>*/}
+                    {/*        Отправить*/}
+                    {/*    </button>*/}
+                    {/*</form>*/}
                 </div>
             </div>
         </div>
