@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media (max-width: 480px) {
     ._ {
         gap: 1rem;
         height: auto;

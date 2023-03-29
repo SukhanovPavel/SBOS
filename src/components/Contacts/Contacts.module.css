@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media (max-width: 480px) {
     ._ {
         height: auto;
         flex-direction: column;
