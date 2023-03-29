@@ -57,6 +57,33 @@
     animation: slide 0.2s;
 }
 
+@media screen and (max-width: 1284px) {
+    ._ {
+        height: auto;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    .listItem {
+        gap: 1rem;
+        padding: 0;
+    }
+    .title {
+        padding: 0;
+        animation: slide 0.5s;
+        font-size: 0.8rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: start;
+        gap: 1rem;
+    }
+    .text {
+        font-size: 0.8rem;
+    }
+}
+
 @media screen and (max-width: 390px) {
     ._ {
         height: auto;
