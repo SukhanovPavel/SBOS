@@ -50,8 +50,7 @@ export const Form = ({handleCloseModal, notFocus}: Props) => {
                     minLength={10}
                     maxLength={11}
                     placeholder="  Имя"
-                    title="phone"
-                    type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+                    type="text"
                 />
             </div>
             <div className={styles.input}>
@@ -61,6 +60,8 @@ export const Form = ({handleCloseModal, notFocus}: Props) => {
                     value={formNumber}
                     onChange={({target:{value}}) => setFormNumber(value) }
                     placeholder="  Телефон"
+                    title="phone"
+                    type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
                     onKeyUp={(event) => event.key === "Enter" ? handleCloseModal() : null}
                 />
             </div>
