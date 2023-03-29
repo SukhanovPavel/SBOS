@@ -66,7 +66,7 @@ export const Form = ({handleCloseModal, notFocus}: Props) => {
                 />
             </div>
             <button
-                // onClick={() => sendMessage(message)}
+                onClick={() => sendMessage(message)}
             >
                 Отправить
             </button>

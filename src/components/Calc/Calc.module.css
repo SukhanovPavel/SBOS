@@ -122,7 +122,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media (max-width: 480px) {
     .calc {
         font-family: var(--font-mono);
         background: white;
