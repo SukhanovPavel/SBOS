@@ -16,18 +16,18 @@ export const Menu = () => {
 
     const [menu, openMenu] = useState(false);
 
-    // const burgerStyles = cx({
-    //     [styles.closed]: true,
-    //     [styles.open]: burger,
-    // })
+    const menuStyle = cx({
+        [styles.menuNone]: menu,
+        [styles.burgerMenu]: menu,
+        [styles.grid]: true
+    })
 
     return (
         <div className={styles._}>
             <div className={styles.burger} onClick={() => openMenu(!menu)}>
                 {menu ? BURGER_X : BURGER}
             </div>
-            {menu ?
-                <div className={styles.grid}>
+            <div className={menuStyle}>
                 <Link className={styles.card} href="/">
                     <h2 className={inter.className}>
                         Главная <span>-&gt;</span>
@@ -57,7 +57,7 @@ export const Menu = () => {
                         Цены <span>-&gt;</span>
                     </h2>
                 </Link>
-            </div> : null}
+            </div>
         </div>
     )
 }
