@@ -53,6 +53,7 @@ export const Calc = () => {
                             <input
                                 className={styles.inputNum}
                                 value={number}
+                                readOnly
                             />
                             <button
                                 className={styles.calcButton}
@@ -100,31 +101,7 @@ export const Calc = () => {
                         оценщика. Для Москвы услуга бесплатна. Стоимость выезда оценщика по Московской области
                         обсуждается по телефону.
                     </div>
-                    <Form handleCloseModal={() => {return null}} />
-                    {/*<form className={styles.calcColumn}>*/}
-                    {/*    <label htmlFor="name">Имя</label>*/}
-                    {/*    <input*/}
-                    {/*        id="name"*/}
-                    {/*        name="name"*/}
-                    {/*        type="text"*/}
-                    {/*        placeholder="  Имя"*/}
-                    {/*        className={styles.inputs}*/}
-                    {/*    />*/}
-                    {/*    <label htmlFor="phone">Телефон</label>*/}
-                    {/*    <input*/}
-                    {/*        id="phone"*/}
-                    {/*        name="phone"*/}
-                    {/*        type="text"*/}
-                    {/*        placeholder="  Телефон"*/}
-                    {/*        className={styles.inputs}*/}
-                    {/*        minLength={10}*/}
-                    {/*        maxLength={11}*/}
-                    {/*        required*/}
-                    {/*    />*/}
-                    {/*    <button type="submit" className={styles.inputs}>*/}
-                    {/*        Отправить*/}
-                    {/*    </button>*/}
-                    {/*</form>*/}
+                    <Form notFocus={true} handleCloseModal={() => {return null}} />
                 </div>
             </div>
         </div>

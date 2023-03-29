@@ -24,6 +24,10 @@
     gap: 2rem;
 }
 
+.svgContainer {
+    width: 1rem;
+}
+
 .svg {
     height: 1.3rem;
 }
@@ -51,4 +55,31 @@
 
 .text {
     animation: slide 0.2s;
+}
+
+@media screen and (max-width: 390px) {
+    ._ {
+        height: auto;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    .listItem {
+        gap: 1rem;
+        padding: 0;
+    }
+    .title {
+        padding: 0;
+        animation: slide 0.5s;
+        font-size: 0.8rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: start;
+        gap: 1rem;
+    }
+    .text {
+        font-size: 0.8rem;
+    }
 }

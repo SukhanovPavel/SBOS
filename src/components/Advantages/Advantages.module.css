@@ -1,5 +1,6 @@
 ._ {
     height: 100vh;
+    padding: 1rem;
     max-width: var(--max-width);
     width: 100%;
     display: flex;
@@ -36,4 +37,36 @@
 .svg {
     height: 7rem;
     fill: #d72c2c;
+}
+
+@media screen and (max-width: 390px) {
+    ._ {
+        height: auto;
+        padding: 1rem;
+        gap: 2rem;
+    }
+    .blocks {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .block {
+        gap: 2rem;
+        padding: 0;
+    }
+    .desc {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 0;
+    }
+    .desc p {
+        font-size: 0.9rem;
+    }
 }

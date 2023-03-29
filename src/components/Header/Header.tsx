@@ -7,7 +7,7 @@ type Props = {
 }
 export const Header = ({handleClick}: Props) => (
     <div className={styles._}>
-        <div className={styles.headerBlock}>
+        <div className={styles.headerBlockLogo}>
             <div className={styles.logoButton}>
                 <svg className={styles.logo} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                     <path d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3
@@ -19,19 +19,19 @@ export const Header = ({handleClick}: Props) => (
                 </div>
             </div>
         </div>
-        <div className={styles.headerBlock}>
+        <div className={styles.headerBlockDesc}>
             <p>город Шатура</p>
             <div>
                 <p>Системы безопасности</p>
                 <p>Видеонаблюдение</p>
             </div>
         </div>
-        <div className={styles.headerBlock}>
+        <div className={styles.headerBlockButton}>
             <button onClick={handleClick} className={styles.button}>Заказать звонок</button>
         </div>
-        <div className={styles.headerBlock}>
+        <div className={styles.headerBlockPhone}>
             <a href="tel:+78000000000"><h1>8 (800) 000-00-00</h1></a>
-            <p>Пн-пт с 9:00 до 19:00</p>
+            <p className={styles.none}>Пн-пт с 9:00 до 19:00</p>
         </div>
     </div>
 )

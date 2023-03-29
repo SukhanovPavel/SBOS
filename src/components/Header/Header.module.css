@@ -4,9 +4,10 @@
     height: 7rem;
     background: whitesmoke;
     padding: 1rem;
+    font-family: var(--font-mono);
 }
 
-.headerBlock {
+.headerBlockLogo {
     width: 25%;
     display: flex;
     /*color: #d72c2c;*/
@@ -15,7 +16,33 @@
     gap: 0.5rem;
     font-weight: bold;
     align-items: flex-start;
-    font-family: var(--font-mono);
+}
+.headerBlockDesc {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    align-items: flex-start;
+}
+.headerBlockButton {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    align-items: flex-start;
+}
+.headerBlockPhone {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    align-items: flex-start;
 }
 
 .logoButton {
@@ -28,31 +55,63 @@
     height: 100%;
 }
 
-.headerBlock p {
+.headerBlockDesc p {
     font-style: normal;
 }
 
 .logo {
     fill: #d72c2c;
-    border-radius: 1rem;
     height: 70%;
 }
 
-/*.button {*/
-/*    width: 10rem;*/
-/*    height: 3rem;*/
-/*    background: #d72c2c;*/
-/*    border-radius: 1rem;*/
-/*    color: white;*/
-/*}*/
+.none {
+    display: flex;
+}
 
-/*@media (prefers-color-scheme: dark) {*/
-/*    ._ {*/
-/*        filter: invert(1);*/
-/*    }*/
-
-/*    .logo,*/
-/*    .headerBlock {*/
-/*        filter: invert(1) drop-shadow(0 0 0.3rem white);*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 390px) {
+    ._ {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 3rem;
+        background: whitesmoke;
+        padding: 0.3rem;
+    }
+    .headerBlockLogo {
+        width: 45%;
+        display: flex;
+        /*color: #d72c2c;*/
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        font-weight: bold;
+        align-items: flex-start;
+    }
+    .logoButton {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        cursor: pointer;
+        font-size: 0.5rem;
+        color: #d72c2c;
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        fill: #d72c2c;
+        height: 70%;
+    }
+    .headerBlockPhone {
+        width: 45%;
+        font-size: 0.4rem;
+    }
+    .headerBlockButton {
+        display: none;
+    }
+    .headerBlockDesc {
+        display: none;
+    }
+    .none {
+        display: none;
+    }
+}

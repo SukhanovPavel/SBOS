@@ -12,7 +12,7 @@ export const Contacts = ({handleClick}: Props) => (
             <div>Контакты</div>
             <div>
                 <div>Адрес</div>
-                <div>Москва, МКАД 32 км, вл.4, ТЦ Шелковый путь</div>
+                <div>Шатура, проспект Ильича д.40</div>
             </div>
             <div>
                 <div>Телефон</div>
@@ -20,7 +20,7 @@ export const Contacts = ({handleClick}: Props) => (
             </div>
             <div>
                 <div>Режим работы</div>
-                <div>Пн-пт: 9:00-19:00</div>
+                <div>Пн-пт: 9:00-18:00</div>
             </div>
             <div>
                 <div>Email</div>
@@ -32,8 +32,8 @@ export const Contacts = ({handleClick}: Props) => (
             <Map
                 className={styles.map}
                 defaultState={{ center: [55.575271, 39.529011], zoom: 15 }}
-                width="30rem"
-                height="40rem"
+                width="100%"
+                height="100%"
             >
                 <Placemark defaultGeometry={[55.575271, 39.529011]} />
             </Map>

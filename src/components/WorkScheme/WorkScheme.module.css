@@ -25,3 +25,19 @@
     align-items: center;
     width: 100%;
 }
+
+@media screen and (max-width: 390px) {
+    ._ {
+        gap: 1rem;
+        height: auto;
+        padding: 1rem;
+    }
+    .desc {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .elem {
+        text-align: center;
+    }
+}
