@@ -30,8 +30,8 @@ export const Header = ({handleClick}: Props) => (
             <button onClick={handleClick} className={styles.button}>Заказать звонок</button>
         </div>
         <div className={styles.headerBlockPhone}>
-            <a href="tel:+78000000000"><h1>8 (800) 000-00-00</h1></a>
-            <p className={styles.none}>Пн-пт с 9:00 до 19:00</p>
+            <a href="tel:+79773716488"><h1>8 (977) 371-64-88</h1></a>
+            <p className={styles.none}>Пн-пт с 9:00 до 18:00</p>
         </div>
     </div>
 )
