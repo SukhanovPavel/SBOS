@@ -69,5 +69,10 @@
 
 .price {
     display: flex;
+}
 
+@media screen and (max-width: 390px) {
+    ._ {
+        display: none;
+    }
 }

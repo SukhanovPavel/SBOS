@@ -41,7 +41,7 @@ export const TopServices = () => (
             </div>
         </div>
         <div>
-            <button>Смотреть все услуги</button>
+            <button className={styles.button}>Смотреть все услуги</button>
         </div>
     </div>
 )

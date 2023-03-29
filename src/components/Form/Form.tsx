@@ -4,9 +4,10 @@ import styles from "./Form.module.css";
 
 type Props = {
     handleCloseModal: () => void;
+    notFocus?: boolean;
 };
 
-export const Form = ({handleCloseModal}: Props) => {
+export const Form = ({handleCloseModal, notFocus}: Props) => {
 
     const [formName, setFormName] = useState("");
     const [formNumber, setFormNumber,] = useState("");
@@ -38,12 +39,12 @@ export const Form = ({handleCloseModal}: Props) => {
 
     return (
         <div className={styles.form}>
-            <h3>ЗАПОЛНИТЕ ДАННЫЕ, И МЫ СВЯЖЕМСЯ С ВАМИ</h3>
+            <h3>ЗАПОЛНИТЕ ДАННЫЕ, И МЫ СВЯЖЕМСЯ С ВАМИ:</h3>
             <div className={styles.input}>
                 <label>Ваше имя:</label>
                 <input
                     className={inputBorder.name ? styles.borderBlue : styles.borderRed}
-                    autoFocus
+                    autoFocus={notFocus ? false : true}
                     value={formName}
                     onChange={({target:{value}}) => setFormName(value)}
                     minLength={10}
