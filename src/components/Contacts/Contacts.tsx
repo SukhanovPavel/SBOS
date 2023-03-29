@@ -16,7 +16,7 @@ export const Contacts = ({handleClick}: Props) => (
             </div>
             <div>
                 <div>Телефон</div>
-                <div>8 (800) 000-00-00</div>
+                <div>8 (977) 371-64-88</div>
             </div>
             <div>
                 <div>Режим работы</div>
@@ -33,7 +33,7 @@ export const Contacts = ({handleClick}: Props) => (
                 className={styles.map}
                 defaultState={{ center: [55.575271, 39.529011], zoom: 15 }}
                 width="100%"
-                height="100%"
+                height="90%"
             >
                 <Placemark defaultGeometry={[55.575271, 39.529011]} />
             </Map>

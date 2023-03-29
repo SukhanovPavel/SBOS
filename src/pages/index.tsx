@@ -51,6 +51,7 @@ export default function Home() {
           <Contacts handleClick={() => openModal(true)} />
 
           {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
+
       </main>
     </YMaps>
   )

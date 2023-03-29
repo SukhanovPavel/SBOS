@@ -24,11 +24,17 @@
     border-radius: 1rem;
 }
 
-.borderBlue:focus-visible {
-
-    border: solid cornflowerblue 0.3rem;
-}
-
-.borderRed {
-    border: solid #d72c2c 0.3rem;
+.popUp {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1100;
+    height: 10rem;
+    width: 30rem;
+    top: 20rem;
+    left: 30rem;
+    background: whitesmoke;
+    border-radius: 1rem;
+    border:3px solid rgba(0,0,0,.5);
+    box-shadow: 0 0 64px rgba(0, 0, 0, 0.2), 0 0 16px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.1);
 }
