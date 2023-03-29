@@ -46,6 +46,73 @@
     }
 }
 
+@media screen and (max-width: 1284px) {
+    ._ {
+        width: 100%;
+        background: none;
+        height: auto;
+    }
+    .burger {
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        top: 0.5rem;
+        right: 0.5rem;
+        fill: black;
+    }
+    .burgerIcon {
+        height: 2rem;
+        fill: black;
+    }
+    @keyframes menu {
+        from {
+            top: -20rem;
+        }
+        10% {
+            top: -18rem;
+        }
+        20% {
+            top: -16rem;
+        }
+        30% {
+            top: -12rem;
+        }
+        40% {
+            top: -10rem;
+        }
+        50% {
+            top: -8rem;
+        }
+        60% {
+            top: -6rem;
+        }
+        70% {
+            top: -4rem;
+        }
+        80% {
+            top: -2rem;
+        }
+        90% {
+            top: -0rem;
+        }
+        to {
+            top: 3rem;
+        }
+    }
+    .grid {
+        animation: menu 0.2s ease-in;
+        position: fixed;
+        top: 3rem;
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(90%, auto));
+        width: var(--max-width);
+        max-width: 100%;
+        height: 22rem;
+        background: lightgray;
+    }
+}
+
 @media screen and (max-width: 390px) {
     ._ {
         width: 100%;

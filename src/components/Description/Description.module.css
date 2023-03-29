@@ -38,6 +38,32 @@
     gap: 1rem;
 }
 
+@media screen and (max-width: 1284px) {
+    ._ {
+        margin-top: 3rem;
+        padding: 1rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-size: 0.85rem;
+        max-width: var(--max-width);
+        width: 100%;
+        height: auto;
+    }
+
+    .descriptionBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 390px) {
     ._ {
         margin-top: 3rem;
