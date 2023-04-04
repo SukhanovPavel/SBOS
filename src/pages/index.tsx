@@ -25,7 +25,7 @@ export default function Home() {
       <Head>
         <title>СБОС. Видеонаблюдение</title>
         <meta name="description" content="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
-      <meta name="google-site-verification" content="IzFALKrcQFz7KVJk9bHAIA0HHB97L5X9FZn5EWwPYBk" />
+        <meta name="google-site-verification" content="IzFALKrcQFz7KVJk9bHAIA0HHB97L5X9FZn5EWwPYBk" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="yandex-verification" content="5710205815328da3" />
         <link rel="icon" href="/favicon.webp" />
