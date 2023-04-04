@@ -23,8 +23,6 @@ export default function Home() {
   return (
     <YMaps>
       <Head>
-          <noscript><div><img src="https://mc.yandex.ru/watch/93080315" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-          <noscript><div><img src="https://mc.yandex.ru/watch/93080315" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <title>СБОС. Видеонаблюдение</title>
         <meta name="google-site-verification" content="IzFALKrcQFz7KVJk9bHAIA0HHB97L5X9FZn5EWwPYBk" />
         <meta name="description" content="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
