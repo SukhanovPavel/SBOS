@@ -92,20 +92,6 @@
 }
 
 @media screen and (max-width: 820px) {
-    .calc {
-        font-family: var(--font-mono);
-        background: white;
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
-        height: auto;
-        max-width: var(--max-width);
-        padding: 1rem;
-    }
     .calcFlex {
         display: flex;
         flex-direction: column;

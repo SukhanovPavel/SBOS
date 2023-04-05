@@ -69,4 +69,5 @@ export default function WifiSetM() {
 
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
         </>
-    )};
+    )
+};

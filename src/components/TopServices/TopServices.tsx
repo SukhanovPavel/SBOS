@@ -21,7 +21,7 @@ export const TopServices = ({servicesMap, titleH1, titleH2, allServicesButton}: 
         {titleH2 ? <h2>{titleH2}</h2> : null}
         <div className={styles.services}>
             {servicesMap.map(service =>
-                <div className={styles.service}>
+                <div key={service.title} className={styles.service}>
                     <h3>{service.title}</h3>
                     <div className={styles.desc}>
                         <img className={styles.img} src={service.img}/>
