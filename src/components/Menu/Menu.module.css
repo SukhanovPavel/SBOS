@@ -15,7 +15,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(25%, auto));
+    grid-template-columns: repeat(4, minmax(30%, auto));
     width: var(--max-width);
     max-width: 100%;
 }
@@ -173,6 +173,7 @@
         display: none;
     }
     .burgerMenu {
+        z-index: 1000;
         animation: menu 0.2s ease-in;
         position: fixed;
         top: 3rem;
@@ -182,7 +183,7 @@
         width: var(--max-width);
         max-width: 100%;
         height: 22rem;
-        background: lightgray;
+        background: rgb(150, 150, 150, 0.95);
     }
 }
 

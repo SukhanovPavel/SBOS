@@ -9,9 +9,9 @@ type Props = {
 export const Description = ({handleClick, href}: Props) => (
     <div className={styles._}>
         <div className={styles.descriptionBlock}>
-            <h2>
+            <h1>
                 УСТАНОВКА СИСТЕМ ВИДЕОНАБЛЮДЕНИЯ В МОСКВЕ ПОД КЛЮЧ
-            </h2>
+            </h1>
             <div className={styles.par}>
                 <div>
                     ➤ Установка видеонаблюдения любой сложности в Москве и области с гарантией качества. В наш

@@ -1,47 +1,45 @@
 
 
 import styles from "./TopServices.module.css";
+import Link from "next/link";
 
-export const TopServices = () => (
+type Props = {
+    servicesMap: {
+        title: string;
+        img: string;
+        description?: string;
+        price?: string;
+        link: string;
+    }[];
+    titleH1?: string;
+    titleH2?: string;
+    allServicesButton: boolean;
+};
+export const TopServices = ({servicesMap, titleH1, titleH2, allServicesButton}: Props) => (
     <div className={styles._}>
-        <h2>ПОПУЛЯРНЫЕ УСЛУГИ</h2>
+        {titleH1 ? <h1>{titleH1}</h1> : null}
+        {titleH2 ? <h2>{titleH2}</h2> : null}
         <div className={styles.services}>
-            <div className={styles.service}>
-                <h3>Видеонаблюдение для офиса</h3>
-                <div className={styles.desc}>
-                    <img className={styles.img} src="https://videonablydenie.ru/assets/img/sol/ofis.jpg"/>
-                    <div>
-                        Разработаем оптимальную систему для видеонаблюдения с решением большого объёма задач.
-                        Установим систему, которая поможет вести контроль за сотрудниками и повысить качество их работы.
+            {servicesMap.map(service =>
+                <div key={service.title} className={styles.service}>
+                    <h3>{service.title}</h3>
+                    <div className={styles.desc}>
+                        <img className={styles.img} src={service.img}/>
+                        {service.description ?
+                            <div>
+                                {service.description}
+                            </div> : null
+                        }
+                        {service.price ?
+                            <div>
+                                Цена: {service.price} руб.
+                            </div> : null
+                        }
                     </div>
-                </div>
-                <button>Подробнее</button>
-            </div>
-            <div className={styles.service}>
-                <h3>Видеонаблюдение для квартиры</h3>
-                <div className={styles.desc}>
-                    <img className={styles.img} src="https://videonablydenie.ru/assets/img/sol/kvartira.jpg"/>
-                    <div>
-                        Соберём комплект для охраны вашего имущества. Грамотно подобранная система снизит риск кражи,
-                        а в случае возникновения ЧС предоставит неопровержимые доказательства.
-                    </div>
-                </div>
-                <button>Подробнее</button>
-            </div>
-            <div className={styles.service}>
-                <h3>Видеонаблюдение для подъезда</h3>
-                <div className={styles.desc}>
-                    <img className={styles.img} src="https://videonablydenie.ru/assets/img/sol/podjest.jpg"/>
-                    <div>
-                        Установим современную систему для охраны. Обеспечим круглосуточный контроль за подъездом.
-                        Множество вариантов систем видеонаблюдения.
-                    </div>
-                </div>
-                <button>Подробнее</button>
-            </div>
+                    <Link href={service.link}><button>Подробнее</button></Link>
+                </div>)
+            }
         </div>
-        <div>
-            <button className={styles.button}>Смотреть все услуги</button>
-        </div>
+        {allServicesButton ? <button className={styles.button}>Смотреть все услуги</button> : null}
     </div>
 )

@@ -1,7 +1,6 @@
 ._ {
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -47,7 +46,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
         font-size: 0.85rem;
         max-width: var(--max-width);
         width: 100%;
@@ -73,7 +71,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
         font-size: 0.85rem;
         max-width: var(--max-width);
         width: 100%;

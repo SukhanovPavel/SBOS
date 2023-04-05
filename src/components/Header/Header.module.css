@@ -45,6 +45,10 @@
     align-items: flex-start;
 }
 
+.phone {
+    font-size: 2rem;
+}
+
 .logoButton {
     display: flex;
     align-items: center;
@@ -124,6 +128,9 @@
         height: 3rem;
         background: whitesmoke;
         padding: 0.3rem;
+    }
+    .phone {
+        font-size: 1rem;
     }
     .headerBlockLogo {
         width: 45%;

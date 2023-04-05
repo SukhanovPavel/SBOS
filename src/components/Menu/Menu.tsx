@@ -40,21 +40,15 @@ export const Menu = () => {
                     </h2>
                 </Link>
 
-                <Link className={styles.card} href="/services">
+                <Link className={styles.card} href="/sets">
                     <h2 className={inter.className}>
                         Комплекты <span>-&gt;</span>
                     </h2>
                 </Link>
 
-                <Link className={styles.card} href="/services">
+                <Link className={styles.card} href="/contacts">
                     <h2 className={inter.className}>
-                        Оборудование <span>-&gt;</span>
-                    </h2>
-                </Link>
-
-                <Link className={styles.card} href="/services">
-                    <h2 className={inter.className}>
-                        Цены <span>-&gt;</span>
+                        Контакты <span>-&gt;</span>
                     </h2>
                 </Link>
             </div>
