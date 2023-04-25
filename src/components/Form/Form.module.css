@@ -38,3 +38,40 @@
     border:3px solid rgba(0,0,0,.5);
     box-shadow: 0 0 64px rgba(0, 0, 0, 0.2), 0 0 16px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.1);
 }
+.warningModal {
+    position: absolute;
+    top: calc(50% - 7.5rem);
+    left: calc(50% - 20rem);
+    width: 40rem;
+    height: 15rem;
+    background: #d72c2c;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: modal 1.5s linear 0s normal none ;
+}
+
+@keyframes modal {
+    0% {
+        scale: 1.1;
+        opacity: 1;
+    }
+    50% {
+        scale: 1.1;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .warningModal {
+        width: 20rem;
+        position: absolute;
+        left: calc(50% - 10rem);
+    }
+}

@@ -1,0 +1,106 @@
+.calc {
+    position: relative;
+    font-family: var(--font-mono);
+    background: white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100vh;
+    max-width: var(--max-width);
+    padding: 1rem;
+}
+.calcFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+.calcBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.bottomButton {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.warningModal {
+    position: absolute;
+    top: calc(50% - 7.5rem);
+    left: calc(50% - 20rem);
+    width: 40rem;
+    height: 15rem;
+    background: #d72c2c;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: modal 1.5s linear 0s normal none ;
+}
+
+@keyframes modal {
+    0% {
+        scale: 1.1;
+        opacity: 1;
+    }
+    50% {
+        scale: 1.1;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .calc {
+        height: 70vh;
+        max-width: 100%;
+        width: 100%;
+    }
+    .calcFlex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .calc {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .calc {
+        height: 70vh;
+    }
+    .calcFlex {
+        height: 65vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

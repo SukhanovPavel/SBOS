@@ -1,5 +1,6 @@
 .calc {
     position: relative;
+    font-family: var(--font-mono);
     background: white;
     border-radius: 2rem;
     display: flex;
@@ -8,7 +9,7 @@
     align-items: center;
     gap: 1rem;
     width: 100%;
-    height: calc(100vh - 3rem);
+    height:  100%;
     max-width: var(--max-width);
     padding: 1rem;
 }
@@ -27,15 +28,14 @@
 }
 
 .calcImg {
-    /*width: 100px;*/
-    /*height: auto;*/
     border-radius: 2rem;
 }
 
 .calcFlex {
-    display: flex;
-    justify-content: space-around;
-    height: calc(100vh - 5rem);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: auto;
+    margin-bottom: 3rem;
 }
 
 .calcBlock {
@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-    width: 46%;
+    width: 100%;
     height: auto;
 }
 
@@ -92,64 +92,52 @@
     height: 1.3rem;
 }
 
-@media screen and (max-width: 850px) {
+.bottomButton {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.priceDesc {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
     .calc {
-        height: auto;
-        max-width: calc(100% - 2rem);
-        text-align: center;
+        height: 70vh;
+        max-width: 100%;
+        width: 100%;
     }
     .calcFlex {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        height: auto;
     }
-    .calcBlock {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        height: auto;
+    .priceDesc {
+        display: none;
     }
-    .calcImg {
-        border-radius: 1rem;
-    }
-    .calcList {
-        font-size: 0.9rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding-left: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .calc {
+        height: 110vh;
     }
 }
 
 @media (max-width: 480px) {
     .calc {
-        height: calc(100vh - 40%);
-        max-width: calc(100% - 2rem);
-        text-align: center;
+        height: 70vh;
     }
     .calcFlex {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 1rem;
-        height: auto;
     }
-    .calcBlock {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        height: auto;
+    .calcImgContain {
+        display: none;
     }
-    .calcImg {
-        border-radius: 1rem;
-    }
-    .calcList {
-        font-size: 0.9rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding-left: 1rem;
+    .priceDesc {
+        display: none;
     }
 }
