@@ -65,8 +65,9 @@
     font-family: var(--font-mono);
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 850px) {
     ._ {
+        max-width: 100%;
         height: auto;
         padding: 1rem;
         text-align: center;

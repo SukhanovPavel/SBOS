@@ -16,7 +16,8 @@ export const Header = ({handleClick}: Props) => (
                     5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/>
                 </svg>
                 <div>
-                    <h2>СБОС.РУ</h2>
+                    <h2 className={styles.h}>СБОС</h2>
+                    <p className={styles.abbr}>Системы безопасности, охрана ,сети связи</p>
                 </div>
             </Link>
         </div>

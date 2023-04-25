@@ -1,8 +1,9 @@
 import cx from "classnames";
-import { Inter } from 'next/font/google';
-import styles from "./Menu.module.css";
 import Link from "next/link";
 import {useState} from "react";
+import { Inter } from 'next/font/google';
+
+import styles from "./Menu.module.css";
 
 const inter = Inter({ subsets: ['latin'] });
 

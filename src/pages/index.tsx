@@ -52,11 +52,12 @@ export default function Home() {
         <meta name="google-site-verification" content="IzFALKrcQFz7KVJk9bHAIA0HHB97L5X9FZn5EWwPYBk" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="yandex-verification" content="5710205815328da3" />
-        <link rel="icon" href="/favicon.webp" />
+        <link rel="icon" href="/favicon.png" type="image/png"/>
       </Head>
-      <Header handleClick={() => openModal(true)}/>
-      <Menu />
+        <Header handleClick={() => openModal(true)}/>
+        <Menu />
       <main className={styles.main}>
+
 
           <Description handleClick={() => openModal(true)} href={"#calc"}/>
 

@@ -40,6 +40,6 @@ export const TopServices = ({servicesMap, titleH1, titleH2, allServicesButton}: 
                 </div>)
             }
         </div>
-        {allServicesButton ? <button className={styles.button}>Смотреть все услуги</button> : null}
+        {allServicesButton ? <Link href="/services"><button className={styles.button}>Смотреть все услуги</button></Link> : null}
     </div>
 )

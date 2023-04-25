@@ -4,18 +4,19 @@
     height: 7rem;
     background: whitesmoke;
     padding: 1rem;
-    font-family: var(--font-mono);
+    z-index: 1000;
 }
 
 .headerBlockLogo {
     width: 25%;
     display: flex;
+    height: 100%;
     /*color: #d72c2c;*/
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-    font-weight: bold;
-    align-items: flex-start;
+    /*font-weight: bold;*/
+    align-items: center;
 }
 .headerBlockDesc {
     width: 25%;
@@ -24,7 +25,7 @@
     justify-content: center;
     gap: 0.5rem;
     font-weight: bold;
-    align-items: flex-start;
+    align-items: center;
 }
 .headerBlockButton {
     width: 25%;
@@ -33,7 +34,7 @@
     justify-content: center;
     gap: 0.5rem;
     font-weight: bold;
-    align-items: flex-start;
+    align-items: center;
 }
 .headerBlockPhone {
     width: 25%;
@@ -42,11 +43,11 @@
     justify-content: center;
     gap: 0.5rem;
     font-weight: bold;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .phone {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .logoButton {
@@ -54,25 +55,31 @@
     align-items: center;
     gap: 1rem;
     cursor: pointer;
-    color: #d72c2c;
+    /*color: #d72c2c;*/
+    color: black;
+    font-size: 1rem;
     width: 100%;
     height: 100%;
 }
-
+.logoButton p {
+    font-size: 0.9rem;
+    width: 85%;
+}
 .headerBlockDesc p {
     font-style: normal;
 }
 
 .logo {
-    fill: #d72c2c;
+    /*fill: #d72c2c;*/
     height: 70%;
+    width: 50%;
 }
 
 .none {
     display: flex;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 850px) {
     ._ {
         position: fixed;
         display: flex;
@@ -117,6 +124,12 @@
     }
     .none {
         display: none;
+    }
+    .abbr {
+        display: none;
+    }
+    .h {
+        font-size: 2rem;
     }
 }
 
@@ -168,5 +181,11 @@
     }
     .none {
         display: none;
+    }
+    .abbr {
+        display: none;
+    }
+    .h {
+        font-size: 1rem;
     }
 }
