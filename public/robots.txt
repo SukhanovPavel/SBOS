@@ -2,3 +2,4 @@
 User-agent: Yandex, Google
 Allow: /
 Sitemap: https://sbos.vercel.app/sitemap.xml
+Sitemap: https://sbos.pro/sitemap.xml
