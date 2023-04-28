@@ -34,13 +34,13 @@ export const CalcQuestTwo = ({
                     <div className={styles.calcImgContain}>
                         {changed.gud ?
                             <Image
-                                width={width > 400 ? (width > 1024 ? 700 : 400) : 340 }
-                                height={width > 400 ? (width > 1024 ? 450 : 300) : 250}
+                                width={width > 400 ? (width > 1200 ? 600 : 400) : 340 }
+                                height={width > 400 ? (width > 1200 ? 450 : 300) : 250}
                                 style={{borderRadius: "1rem"}}
                                 alt="img"
                                 src={CALCGUD}
                             /> : <Image
-                                width={width > 400 ? (width > 1200 ? 700 : 400) : 340 }
+                                width={width > 400 ? (width > 1200 ? 600 : 400) : 340 }
                                 height={width > 400 ? (width > 1200 ? 450 : 300) : 250}
                                 style={{borderRadius: "1rem"}}
                                 alt="img"
