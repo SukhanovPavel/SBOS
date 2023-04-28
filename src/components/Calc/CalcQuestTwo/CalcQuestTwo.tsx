@@ -25,7 +25,7 @@ export const CalcQuestTwo = ({
     const [width, setWidth] = useState(0);
 
     // Similar to componentDidMount and componentDidUpdate:
-    useEffect(() => setWidth(document.documentElement.clientWidth), [changed, setChange]);
+    useEffect(() => setWidth(document.documentElement.clientWidth), []);
 
     return (
         <div className={styles.calc}>

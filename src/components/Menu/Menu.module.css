@@ -5,6 +5,11 @@
     background: darkorange;
     display: flex;
     align-items: center;
+    z-index: 1000;
+}
+._fixed {
+    position: fixed;
+    top: 0;
 }
 .burger {
     display: none;

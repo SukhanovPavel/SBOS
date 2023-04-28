@@ -1,6 +1,6 @@
 import cx from "classnames";
 import Link from "next/link";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import { Inter } from 'next/font/google';
 
 import styles from "./Menu.module.css";
@@ -17,14 +17,30 @@ export const Menu = () => {
 
     const [menu, openMenu] = useState(false);
 
+    const [fixedMenu, setFixedMenu] = useState(false);
+
     const menuStyle = cx({
         [styles.menuNone]: menu,
         [styles.burgerMenu]: menu,
         [styles.grid]: true
-    })
+    });
+    const fixedMenuStyle = cx({
+        [styles._]: true,
+        [styles._fixed]: fixedMenu
+    });
+    const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop;
+        if (scrolled > 200){
+            setFixedMenu(true)
+        }
+        else if (scrolled <= 200){
+            setFixedMenu(false)
+        }
+    };
+    useEffect(() => window.addEventListener('scroll', toggleVisible), []);
 
     return (
-        <div className={styles._}>
+        <div className={fixedMenuStyle}>
             <div className={styles.burger} onClick={() => openMenu(!menu)}>
                 {menu ? BURGER_X : BURGER}
             </div>

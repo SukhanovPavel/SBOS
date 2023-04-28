@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 
 export const Download = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
     <path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160
@@ -35,7 +35,7 @@ export const Form = (
         ceil,
         money,
         reload
-    }: Props) => {
+    }: Props): JSX.Element => {
 
     const [popUp, lookPopUp] = useState(false);
 
@@ -90,21 +90,29 @@ export const Form = (
     ${money ? `8. Бюджет клиента: ${money}` : ''}`;
 
 
-    const [documentFile, setDocumentFile] = useState(null);
+    const [documentFile, setDocumentFile] = useState<File | null>(null);
 
     const [filesLength, setFilesLength] = useState(0);
+    // function handleDocumentChange(event: React.ChangeEvent<HTMLInputElement> | null) {
+    //     if (event?.target?.files) {
+    //         setDocumentFile(event.target.files[0] ? event.target.files[0] : );
+    //         setFilesLength(event.target.files.length);
+    //     }
+    // }
 
-    function handleDocumentChange(event) {
-        setDocumentFile(event.target.files[0]);
-        setFilesLength(event.target.files.length);
+
+    function handleDocumentChange(event: React.ChangeEvent<HTMLInputElement>) {
+        event?.target?.files ? setDocumentFile(event.target.files[0]) : null;
+        setFilesLength(event.target.files !== null ? event.target.files.length : 0);
     }
+
 
     function sendDocument() {
         const url = `https://api.telegram.org/bot${tg.token}/sendDocument`
 
         const formData = new FormData();
         formData.append('chat_id', tg.chat_id);
-        formData.append('document', documentFile, documentFile.name);
+        documentFile !== null ? formData.append('document', documentFile, documentFile.name) : null;
 
         const obj = {
             chat_id: tg.chat_id,
@@ -113,7 +121,7 @@ export const Form = (
 
         const xht = new XMLHttpRequest();
         xht.open("POST", url, true);
-        const encodedName = encodeURIComponent(documentFile.name);
+        const encodedName = documentFile !== null ? encodeURIComponent(documentFile.name) : null;
         xht.setRequestHeader("Content-Disposition", `attachment; filename*=UTF-8''${encodedName}`);
         xht.send(formData);
         setTimeout(() => {
