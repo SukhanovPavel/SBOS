@@ -12,11 +12,15 @@
 .burgerIcon {
     fill: black;
 }
-
+.menuIcons {
+    fill: currentColor;
+    height: 1rem;
+}
 .grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(25%, auto));
+    grid-template-columns: repeat(4, minmax(20%, 20%));
+    justify-content: space-around;
     max-width: 100%;
 }
 
@@ -25,7 +29,10 @@
     border-radius: var(--border-radius);
     background: rgba(var(--card-rgb), 0);
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
     border: 1px solid rgba(var(--card-border-rgb), 0);
     transition: background 200ms, border 200ms;
 }
@@ -112,6 +119,9 @@
         height: 2rem;
         fill: black;
     }
+    .card span {
+        display: none;
+    }
     @keyframes menu {
         from {
             top: -20rem;
@@ -131,12 +141,15 @@
         animation: menu 0.2s linear;
         position: fixed;
         top: 3rem;
-        padding-top: 2rem;
+        padding-top: 1rem;
         display: grid;
         grid-template-columns: repeat(1, minmax(90%, auto));
         width: 100%;
         max-width: 100%;
         height: 22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         background: rgb(150, 150, 150, 0.95);
     }
 }

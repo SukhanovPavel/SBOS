@@ -6,8 +6,8 @@
   align-items: center;
   gap: 3rem;
   min-height: 100vh;
-  /*font-family: var(--font-mono);*/
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var(--font-mono);
+  /*font-family: 'Ubuntu', sans-serif;*/
 }
 
 .popUp {
@@ -46,6 +46,13 @@
   .card:hover span {
     transform: none;
   }
+}
+
+@media (max-width: 700px) {
+    .main {
+      margin-top: 2rem;
+      text-align: center;
+    }
 }
 
 /* Mobile */
