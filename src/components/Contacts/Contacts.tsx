@@ -1,4 +1,5 @@
 import {Map, Placemark} from "@pbe/react-yandex-maps";
+import {YMaps} from "@pbe/react-yandex-maps";
 
 import styles from "./Contacts.module.css";
 
@@ -7,6 +8,7 @@ type Props = {
 }
 
 export const Contacts = ({handleClick}: Props) => (
+    <YMaps>
     <div className={styles._}>
         <div className={styles.block}>
             <div>Контакты</div>
@@ -37,4 +39,5 @@ export const Contacts = ({handleClick}: Props) => (
             </Map>
         </div>
     </div>
+    </YMaps>
 )
