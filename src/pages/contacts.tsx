@@ -5,10 +5,10 @@ import {useState} from "react";
 import Head from "next/head";
 import {Header} from "@/components/Header/Header";
 import {Menu} from "@/components/Menu/Menu";
-import {Contacts} from "@/components/Contacts/Contacts";
+import {Contacts as Cont} from "@/components/Contacts/Contacts";
 
 
-const contacts = () => {
+const Contacts = () => {
 
     const [modal, openModal] = useState(false);
 
@@ -24,10 +24,10 @@ const contacts = () => {
             </Head>
             <Header handleClick={() => openModal(true)}/>
             <Menu />
-            <Contacts handleClick={() => openModal(true)} />
+            <Cont handleClick={() => openModal(true)} />
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
         </YMaps>
     );
 }
 
-export default contacts;
+export default Contacts;
