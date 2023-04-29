@@ -8,6 +8,7 @@
     width: 100%;
     height: calc(100vh - 10rem);
     /*font-family: 'Roboto', sans-serif;*/
+    overflow: auto;
 }
 
 .descriptionBlock {
