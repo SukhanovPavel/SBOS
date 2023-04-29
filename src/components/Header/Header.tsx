@@ -2,7 +2,7 @@
 
 import styles from "./Header.module.css";
 import Link from "next/link";
-import {ScrollButton} from "@/components/ScrollButton/ScrollButton";
+// import {ScrollButton} from "@/components/ScrollButton/ScrollButton";
 
 type Props = {
     handleClick: () => void;
@@ -36,6 +36,6 @@ export const Header = ({handleClick}: Props) => (
             <a className={styles.phone} href="tel:+79773716488">8 (977) 371-64-88</a>
             <p className={styles.none}>Пн-пт с 9:00 до 18:00</p>
         </div>
-        <ScrollButton/>
+        {/*<ScrollButton/>*/}
     </div>
 )
