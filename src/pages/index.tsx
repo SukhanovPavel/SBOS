@@ -14,7 +14,6 @@ import {Description} from "@/components/Description/Description";
 import {Calc} from "@/components/Calc/Calc";
 
 import styles from '@/styles/Home.module.css';
-import {YMaps} from "@pbe/react-yandex-maps";
 
 const servicesMap = [
     {
@@ -45,7 +44,7 @@ export default function Home() {
   const [modal, openModal] = useState(false);
 
   return (
-    <YMaps>
+    <>
       <Head>
         <title>СБОС. Видеонаблюдение</title>
         <meta name="description" content="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
@@ -56,10 +55,8 @@ export default function Home() {
       </Head>
         <Header handleClick={() => openModal(true)}/>
         <Menu />
+        <Description handleClick={() => openModal(true)} href={"#calc"}/>
       <main className={styles.main}>
-
-
-          <Description handleClick={() => openModal(true)} href={"#calc"}/>
 
           <Calc />
 
@@ -80,6 +77,6 @@ export default function Home() {
           {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
 
       </main>
-    </YMaps>
+    </>
   )
 }

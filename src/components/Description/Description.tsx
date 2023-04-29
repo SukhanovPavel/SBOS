@@ -10,7 +10,7 @@ export const Description = ({handleClick, href}: Props) => (
     <div className={styles._}>
         <div className={styles.descriptionBlock}>
             <h1>
-                УСТАНОВКА СИСТЕМ ВИДЕОНАБЛЮДЕНИЯ В МОСКВЕ ПОД КЛЮЧ
+                УСТАНОВКА СИСТЕМ ВИДЕОНАБЛЮДЕНИЯ ПОД КЛЮЧ
             </h1>
             <div className={styles.par}>
                 <div className={styles.twoP}>
