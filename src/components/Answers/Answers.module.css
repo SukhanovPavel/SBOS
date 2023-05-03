@@ -57,7 +57,7 @@
     animation: slide 0.2s;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
     ._ {
         max-width: 100%;
         height: auto;
@@ -71,17 +71,13 @@
     }
     .title {
         padding: 0;
-        animation: slide 0.5s;
-        font-size: 0.8rem;
+        animation: slide 1s;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         text-align: start;
         gap: 1rem;
-    }
-    .text {
-        font-size: 0.8rem;
     }
 }
 
@@ -98,7 +94,7 @@
     }
     .title {
         padding: 0;
-        animation: slide 0.5s;
+        animation: slide 1s;
         font-size: 0.8rem;
         cursor: pointer;
         display: flex;

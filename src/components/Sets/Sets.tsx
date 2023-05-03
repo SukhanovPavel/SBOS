@@ -29,10 +29,10 @@ export const Sets = ({handleClick}: Props) => (
                 <div className={styles.list}>
                     <h4>CCTV-видеонаблюдение на 4 камеры</h4>
                     <div className={styles.p}>
-                        <div className={styles.svg}>{DONE}</div>
-                        В стоимость включены оборудование и монтаж
-                    </div>
-                    <div className={styles.p}>{DONE}4 камеры</div>
+                        <div className={styles.svg}>
+                            {DONE}
+                        </div>В стоимость включены оборудование и монтаж</div>
+                    <div className={styles.p}><div className={styles.svg}>{DONE}</div>4 камеры</div>
                     <div className={styles.p}><div className={styles.svg}>{X}</div>Детализированное изображение</div>
                     <div className={styles.p}><div className={styles.svg}>{X}</div>Возможность трансляции на смартфон или планшет</div>
                     <div className={styles.p}><div className={styles.svg}>{X}</div>Видеоаналитика (распознование лиц, детектор движения, распознавание номеров и т.д.)</div>
