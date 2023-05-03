@@ -1,6 +1,6 @@
 .questOne {
     position: relative;
-    height: calc(100vh - 3rem);
+    /*height: calc(100vh - 3rem);*/
     max-width: var(--max-width);
     display: flex;
     flex-direction: column;

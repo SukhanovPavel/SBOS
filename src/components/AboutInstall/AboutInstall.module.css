@@ -65,7 +65,7 @@
     font-family: var(--font-mono);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
     ._ {
         max-width: 100%;
         height: auto;
@@ -81,6 +81,7 @@
     .block {
         text-align: justify;
         gap: 1rem;
+        align-items: center;
     }
     .img {
         border-radius: 1rem;

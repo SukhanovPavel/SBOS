@@ -6,6 +6,10 @@ import styles from "./CalcQuestTwo.module.css";
 import CALCBAD from "../../../../public/images/calc/calc3-min.jpeg";
 import CALCGUD from "../../../../public/images/calc/calc2-min.jpeg";
 
+const CHECK = <svg className={styles.checkIcon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8
+     0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+
 type Props = {
     number: number;
     setNumber: (arg: number) => void;
@@ -24,7 +28,6 @@ export const CalcQuestTwo = ({
                              }: Props) => {
     const [width, setWidth] = useState(0);
 
-    // Similar to componentDidMount and componentDidUpdate:
     useEffect(() => setWidth(document.documentElement.clientWidth), [changed, setChange]);
 
     return (
@@ -34,14 +37,14 @@ export const CalcQuestTwo = ({
                     <div className={styles.calcImgContain}>
                         {changed.gud ?
                             <Image
-                                width={width > 400 ? (width > 1024 ? 700 : 400) : 340 }
-                                height={width > 400 ? (width > 1024 ? 450 : 300) : 250}
+                                width={width > 950 ? (width > 1024 ? 600 : 400) : 340 }
+                                height={width > 400 ? (width > 1024 ? 400 : 300) : 250}
                                 style={{borderRadius: "1rem"}}
                                 alt="img"
                                 src={CALCGUD}
                             /> : <Image
-                                width={width > 400 ? (width > 1200 ? 700 : 400) : 340 }
-                                height={width > 400 ? (width > 1200 ? 450 : 300) : 250}
+                                width={width > 950 ? (width > 1200 ? 600 : 400) : 340 }
+                                height={width > 400 ? (width > 1200 ? 400 : 300) : 250}
                                 style={{borderRadius: "1rem"}}
                                 alt="img"
                                 src={CALCBAD}
@@ -101,15 +104,15 @@ export const CalcQuestTwo = ({
                         </div>
                         <div className={styles.priceDesc}>
                             <h3>В стоимость входит:</h3>
-                            <ul className={styles.calcList}>
-                                <li>Проектирование проекта</li>
-                                <li>Профессиональное оборудование и расходники</li>
-                                <li>Установка и настройка системы видеонаблюдения</li>
-                                <li>Доступ к любой камере в онлайн режиме из любой точки мира</li>
-                                <li>Постоянная запись или запись при движении</li>
-                                <li>Хорошее качество записи в тёмное время суток</li>
-                                <li>Консультация и обучение по эксплуатации системы</li>
-                            </ul>
+                            <div className={styles.calcList}>
+                                <p><div className={styles.checkIcon}>{CHECK}</div>Проектирование проекта</p>
+                                <p><div className={styles.checkIcon}>{CHECK}</div>Профессиональное оборудование и расходники</p>
+                                <p><div className={styles.checkIcon}>{CHECK}</div>Установка и настройка системы видеонаблюдения</p>
+                                <p><div className={styles.checkIcon}>{CHECK}</div>Доступ к любой камере в онлайн режиме из любой точки мира</p>
+                                <p><div className={styles.checkIcon}>{CHECK}</div>Постоянная запись или запись при движении</p>
+                                <p><div className={styles.checkIcon}>{CHECK}</div>Хорошее качество записи в тёмное время суток</p>
+                                <p><div className={styles.checkIcon}>{CHECK}</div>Консультация и обучение по эксплуатации системы</p>
+                            </div>
                         </div>
                     </div>
                 </div>
