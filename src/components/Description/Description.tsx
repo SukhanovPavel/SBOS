@@ -34,7 +34,8 @@ export const Description = ({handleClick, href}: Props) => (
             <img
                 alt="description"
                 className={styles.descriptionImage}
-                src="https://videonablydenie.ru/assets/img/videonabludenie.jpg"
+                // src="https://videonablydenie.ru/assets/img/videonabludenie.jpg"
+                src="https://www.hikvision.com/content/dam/hikvision/legacy/ueditor/net/upload/2016-03-24/62683ad7-dd6f-439c-b714-4abedd737933.jpg"
             />
         </div>
     </div>

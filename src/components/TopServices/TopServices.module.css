@@ -44,7 +44,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
     ._ {
         height: auto;
         max-width: 100%;
@@ -56,7 +56,7 @@
 
     .services {
         display: flex;
-        flex-direction: column;
+        padding: 0 1rem;
     }
     .service {
         width: 100%;
@@ -83,8 +83,9 @@
 }
 
 @media (max-width: 480px) {
-
     .services {
+        padding: 0;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -93,7 +94,6 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        /*padding: 1rem;*/
     }
     .img {
         height: 100%;

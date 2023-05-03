@@ -8,7 +8,7 @@
     align-items: center;
     gap: 1rem;
     width: 100%;
-    height: calc(100vh - 3rem);
+    min-height: 40rem;
     max-width: var(--max-width);
     padding: 1rem;
 }
@@ -27,15 +27,12 @@
 }
 
 .calcImg {
-    /*width: 100px;*/
-    /*height: auto;*/
     border-radius: 2rem;
 }
 
 .calcFlex {
     display: flex;
     justify-content: space-around;
-    height: calc(100vh - 5rem);
 }
 
 .calcBlock {
@@ -92,7 +89,7 @@
     height: 1.3rem;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
     .calc {
         height: auto;
         max-width: calc(100% - 2rem);

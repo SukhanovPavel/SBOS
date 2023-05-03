@@ -8,7 +8,7 @@
   min-height: 100vh;
   font-family: var(--font-mono);
   /*font-family: 'Ubuntu', sans-serif;*/
-  overflow-y: auto;
+  /*overflow-y: auto;*/
 }
 .popUp {
   display: flex;
