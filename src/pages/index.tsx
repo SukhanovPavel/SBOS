@@ -52,7 +52,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="yandex-verification" content="5710205815328da3" />
         <link rel="icon" href="/favicon.png" type="image/png"/>
-        <meta name="mailru-domain" content="azCQQhQ7d8CDdQbT" />
+        <meta name="mailru-domain" content="iUN55y6jm47nypeM" />
       </Head>
         <Header handleClick={() => openModal(true)}/>
         <Menu />
