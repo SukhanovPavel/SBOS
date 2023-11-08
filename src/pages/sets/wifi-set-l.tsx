@@ -7,6 +7,7 @@ import {Modal} from "@/components/Modal/Modal";
 import {DONE} from "@/components/Sets/Sets";
 
 import styles from "../../components/AboutInstall/AboutInstall.module.css";
+import Layout from "@/components/Layout/Layout";
 
 export const STAR = <svg className={styles.starIcon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
     <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7
@@ -20,16 +21,7 @@ export default function WifiSetL() {
 
     return (
         <>
-            <Head>
-                <title>Видеонаблюдение WI-FI комплект видеонаблюдения</title>
-                <meta name="description" content="Видеонаблюдение WI-FI комплект видеонаблюдения. Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
-                <meta name="google-site-verification" content="IzFALKrcQFz7KVJk9bHAIA0HHB97L5X9FZn5EWwPYBk" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="yandex-verification" content="5710205815328da3" />
-                <link rel="icon" href="/images/favicon.webp" />
-            </Head>
-            <Header handleClick={() => openModal(true)}/>
-            <Menu />
+            <Layout meta="Видеонаблюдение WI-FI комплект видеонаблюдения. Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре"/>
             <main className={styles.main}>
                 <div className={styles._}>
                     <h1>WI-FI КОМПЛЕКТ ВИДЕОНАБЛЮДЕНИЯ L</h1>

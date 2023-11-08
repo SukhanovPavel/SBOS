@@ -1,11 +1,9 @@
 import Link from "next/link";
-import {Header} from "@/components/Header/Header";
-import {Menu} from "@/components/Menu/Menu";
-import Head from "next/head";
 import {useState} from "react";
 import {TopServices} from "@/components/TopServices/TopServices";
 import styles from "@/styles/Home.module.css";
 import {Modal} from "@/components/Modal/Modal";
+import Layout from "@/components/Layout/Layout";
 
 const servicesMap = [
     {
@@ -52,16 +50,7 @@ const Sets = () => {
 
     return (
         <>
-            <Head>
-                <title>Видеонаблюдение готовые наборы. Комплекты камер видеонаблюдения</title>
-                <meta name="description" content="Видеонаблюдение готовые наборы. Комплекты камер видеонаблюдения. Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
-                <meta name="google-site-verification" content="IzFALKrcQFz7KVJk9bHAIA0HHB97L5X9FZn5EWwPYBk" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="yandex-verification" content="5710205815328da3" />
-                <link rel="icon" href="/favicon.png" />
-            </Head>
-            <Header handleClick={() => openModal(true)}/>
-            <Menu />
+            <Layout meta="Видеонаблюдение готовые наборы. Комплекты камер видеонаблюдения. Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре"/>
             <main className={styles.main}>
 
                 <TopServices

@@ -7,6 +7,7 @@ import {Modal} from "@/components/Modal/Modal";
 import {DONE} from "@/components/Sets/Sets";
 
 import styles from "../../components/AboutInstall/AboutInstall.module.css";
+import Layout from "@/components/Layout/Layout";
 
 export default function HomeCamera() {
 
@@ -14,16 +15,7 @@ export default function HomeCamera() {
 
     return (
     <>
-        <Head>
-            <title>Видеонаблюдение в квартире. Установка видеонаблюдения в квартире.</title>
-            <meta name="description" content="Установка видеонаблюдения в квартире. Видеонаблюдение через смартфоню Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
-            <meta name="google-site-verification" content="IzFALKrcQFz7KVJk9bHAIA0HHB97L5X9FZn5EWwPYBk" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta name="yandex-verification" content="5710205815328da3" />
-            <link rel="icon" href="/images/favicon.webp" />
-        </Head>
-        <Header handleClick={() => openModal(true)}/>
-        <Menu />
+        <Layout meta="Установка видеонаблюдения в квартире. Видеонаблюдение через смартфоню Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре"/>
         <main className={styles.main}>
             <div className={styles._}>
                 <h1>УСТАНОВКА ВИДЕОНАБЛЮДЕНИЯ В КВАРТИРЕ</h1>
