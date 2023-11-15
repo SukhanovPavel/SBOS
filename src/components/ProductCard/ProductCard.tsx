@@ -12,8 +12,8 @@ export type Props = {
     list1: string[];
     title2: string;
     list2: string[];
-    title3?: string;
-    list3?: string[];
+    title3?: string | undefined;
+    list3?: string[] | undefined;
 }
 
 export const ProductCard = ({
@@ -61,7 +61,8 @@ export const ProductCard = ({
                 <h3>{title2}</h3>
                 {list2.map(item => <p key={Math.random()}>. {item}</p>)}
                 <h3>{title3}</h3>
-                {list3?.map(item => <p key={Math.random()}><span>.</span> {item}</p>)}
+                {list3?.length ?
+                    list3.map(item => <p key={Math.random()}><span>.</span> {item}</p>) : null}
             </div>
 
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}

@@ -1,5 +1,5 @@
 'use client'
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import Layout from "@/components/Layout/Layout";
 import {ProductCard} from "@/components/ProductCard/ProductCard";
 import {Modal} from "@/components/Modal/Modal";
@@ -13,11 +13,11 @@ export default function Page() {
 
     const router = useRouter();
 
+    type ObjectKey = keyof typeof PRODUCT_DATA;
 
-    const path = router.query.page;
+    const path = router.query.page as ObjectKey;
 
-    if (typeof path === "string") {
-        return (
+    return (
             <>
                 <Layout meta={PRODUCT_DATA[path].title}/>
                 <ProductCard
@@ -35,7 +35,4 @@ export default function Page() {
                 {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
             </>
         )
-    } else {
-        return null;
-    }
 };
