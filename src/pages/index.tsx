@@ -16,21 +16,21 @@ import Layout from "@/components/Layout/Layout";
 const servicesMap = [
     {
         title: "Видеонаблюдение для офиса",
-        img: "https://videonablydenie.ru/assets/img/sol/ofis.jpg",
+        image: "https://videonablydenie.ru/assets/img/sol/ofis.jpg",
         link: "/services/office-camera",
         description: "Разработаем оптимальную систему для видеонаблюдения с решением большого объёма задач.\n" +
                      "Установим систему, которая поможет вести контроль за сотрудниками и повысить качество их работы."
     },
     {
         title: "Видеонаблюдение для квартиры",
-        img: "https://videonablydenie.ru/assets/img/sol/kvartira.jpg",
+        image: "https://videonablydenie.ru/assets/img/sol/kvartira.jpg",
         link: "/services/home-camera",
         description: "Соберём комплект для охраны вашего имущества. Грамотно подобранная система снизит риск кражи,\n" +
                      "а в случае возникновения ЧС предоставит неопровержимые доказательства."
     },
     {
         title: "Видеонаблюдение для подъезда",
-        img: "https://videonablydenie.ru/assets/img/sol/podjest.jpg",
+        image: "https://videonablydenie.ru/assets/img/sol/podjest.jpg",
         link: "/services/entrance-camera",
         description: "Установим современную систему для охраны. Обеспечим круглосуточный контроль за подъездом.\n" +
                      "Множество вариантов систем видеонаблюдения."

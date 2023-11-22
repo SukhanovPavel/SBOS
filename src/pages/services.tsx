@@ -9,55 +9,55 @@ import styles from "@/styles/Home.module.css";
 const servicesMap = [
     {
         title: "Установка видеонаблюдения в квартире",
-        img: "https://videonablydenie.ru/assets/gallery/1/3.jpg",
+        image: "https://videonablydenie.ru/assets/gallery/1/3.jpg",
         link: "/services/home-camera",
         price: "4990"
     },
     {
         title: "Установка видеонаблюдения в офисе",
-        img: "https://videonablydenie.ru/assets/gallery/2/9.jpg",
+        image: "https://videonablydenie.ru/assets/gallery/2/9.jpg",
         link: "/services/office-camera",
         price: "13490"
     },
     {
         title: "Установка видеонаблюдения на улице",
-        img: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F3%2F19.jpg",
+        image: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F3%2F19.jpg",
         link: "/services/street-camera",
         price: "9990"
     },
     {
         title: "Установка видеонаблюдения в подъезде",
-        img: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F4%2F22.jpg",
+        image: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F4%2F22.jpg",
         link: "/services/entrance-camera",
         price: "27990"
     },
     {
         title: "Установка видеонаблюдения в магазине",
-        img: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F5%2F25.jpg",
+        image: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F5%2F25.jpg",
         link: "/services/shop-camera",
         price: "63990"
     },
     {
         title: "Установка видеонаблюдения на даче",
-        img: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F8%2F61.jpg",
+        image: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F8%2F61.jpg",
         link: "/services/dacha-camera",
         price: "18990"
     },
     {
         title: "Установка видеонаблюдения в кафе",
-        img: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F6%2F53.jpg",
+        image: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F6%2F53.jpg",
         link: "/services/cafe-camera",
         price: "44990"
     },
     {
         title: "Установка видеонаблюдения на складе",
-        img: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F9%2F34.jpg",
+        image: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F9%2F34.jpg",
         link: "/services/sclad-camera",
         price: "14990"
     },
     {
         title: "Установка видеонаблюдения в школе",
-        img: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F12%2F46.jpg",
+        image: "https://videonablydenie.ru/assets/components/gallery/connector.php?action=web/phpthumb&ctx=web&w=647&h=382&zc=1&far=C&q=90&src=%2Fassets%2Fgallery%2F12%2F46.jpg",
         link: "/services/school-camera",
         price: "54990"
     },
