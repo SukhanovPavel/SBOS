@@ -11,9 +11,10 @@ const Contacts = () => {
 
     return (
         <YMaps>
-            <Layout meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
+            <Layout meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" >
             <Cont handleClick={() => openModal(true)} />
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
+            </Layout>
         </YMaps>
     );
 }

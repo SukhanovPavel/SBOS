@@ -42,8 +42,7 @@ export default function Home() {
   const [modal, openModal] = useState(false);
 
   return (
-    <>
-      <Layout meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
+    <Layout meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" >
       <Description handleClick={() => openModal(true)} href={"#calc"}/>
       <main className={styles.main}>
 
@@ -66,6 +65,6 @@ export default function Home() {
           {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
 
       </main>
-    </>
+    </Layout>
   )
 }

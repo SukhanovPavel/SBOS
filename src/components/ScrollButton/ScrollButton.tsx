@@ -33,7 +33,7 @@ export const ScrollButton = () => {
         <button className={styles._}>
             <FaArrowCircleUp
                 onClick={() => setScroll(scroll + 1)}
-                style={{display: visible ? 'inline' : 'none'}}
+                style={{display: visible ? 'inline' : 'none', fill: "rgb(255,200,74,1)"}}
             />
         </button>
     );

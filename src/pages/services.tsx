@@ -67,8 +67,7 @@ const Services = () => {
     const [modal, openModal] = useState(false);
 
     return (
-        <>
-            <Layout meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" />
+        <Layout meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" >
             <main className={styles.main}>
 
                 <TopServices
@@ -83,7 +82,7 @@ const Services = () => {
 
                 {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
             </main>
-        </>
+        </Layout>
     )
 }
 

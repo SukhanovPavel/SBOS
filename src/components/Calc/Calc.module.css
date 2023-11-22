@@ -1,6 +1,7 @@
 .calc {
     position: relative;
     background: white;
+    /*background: inherit;*/
     border-radius: 2rem;
     display: flex;
     flex-direction: column;

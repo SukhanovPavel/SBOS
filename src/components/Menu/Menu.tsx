@@ -34,27 +34,32 @@ export const Menu = () => {
             </div>
             <div className={menuStyle}>
                 <Link className={styles.card} href="/">
-                    <h2>Главная</h2>
+                    <p>Главная</p>
                     <span>{ARROW}</span>
                 </Link>
 
                 <Link className={styles.card} href="/services">
-                    <h2>Услуги</h2>
+                    <p>Услуги</p>
                     <span>{ARROW}</span>
                 </Link>
 
                 <Link className={styles.card} href="/products">
-                    <h2>Товары</h2>
+                    <p>Товары</p>
+                    <span>{ARROW}</span>
+                </Link>
+
+                <Link className={styles.card} href="/ourworks" >
+                    <p>Наши работы</p>
                     <span>{ARROW}</span>
                 </Link>
 
                 <Link className={styles.card} href="/sets">
-                    <h2>Комплекты</h2>
+                    <p>Комплекты</p>
                     <span>{ARROW}</span>
                 </Link>
 
                 <Link className={styles.card} href="/contacts">
-                    <h2>Контакты</h2>
+                    <p>Контакты</p>
                     <span>{ARROW}</span>
                 </Link>
             </div>

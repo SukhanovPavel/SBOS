@@ -4,16 +4,19 @@ import {Header} from "@/components/Header/Header";
 import {Menu} from "@/components/Menu/Menu";
 import {Modal} from "@/components/Modal/Modal";
 
+import styles from "./Layout.module.css";
+
 type Props = {
     meta: string;
+    children: React.ReactNode
 }
 
-const Layout = ({meta}: Props) => {
+const Layout = ({meta, children}: Props) => {
 
     const [modal, openModal] = useState(false);
 
     return (
-        <>
+        <div className={styles._}>
             <Head>
                 <title>СБОС. Видеонаблюдение</title>
                 <meta name="description" content={meta} />
@@ -25,8 +28,9 @@ const Layout = ({meta}: Props) => {
             </Head>
             <Header handleClick={() => openModal(true)}/>
             <Menu />
+            {children}
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-        </>
+        </div>
     );
 };
 
