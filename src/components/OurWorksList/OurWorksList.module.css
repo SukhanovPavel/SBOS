@@ -24,13 +24,29 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: rgb(0, 0, 0, 0.7);
 }
 .fullScreenImage {
     width: auto;
     height: 100%;
+}
+.arrow {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 3rem;
+    background: rgb(0, 0, 0, 0.9);
+}
+.leftArrow {
+    transform: rotate(180deg);
+}
+.arrow svg {
+    fill: white;
+    height: 3rem;
 }
 .box {
     display: flex;
