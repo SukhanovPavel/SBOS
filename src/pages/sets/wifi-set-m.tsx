@@ -1,7 +1,4 @@
 import {useState} from "react";
-import Head from "next/head";
-import {Header} from "@/components/Header/Header";
-import {Menu} from "@/components/Menu/Menu";
 import {Modal} from "@/components/Modal/Modal";
 
 import {DONE} from "@/components/Sets/Sets";
@@ -20,8 +17,7 @@ export default function WifiSetM() {
     const [modal, openModal] = useState(false);
 
     return (
-        <>
-            <Layout meta="Видеонаблюдение WI-FI комплект видеонаблюдения. Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре"/>
+        <Layout meta="Видеонаблюдение WI-FI комплект видеонаблюдения. Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре">
             <main className={styles.main}>
                 <div className={styles._}>
                     <h1>WI-FI КОМПЛЕКТ ВИДЕОНАБЛЮДЕНИЯ M</h1>
@@ -60,6 +56,6 @@ export default function WifiSetM() {
             </main>
 
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-        </>
+        </Layout>
     )
 };

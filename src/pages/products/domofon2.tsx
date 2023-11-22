@@ -64,8 +64,7 @@ export default function Domofon2() {
     const [modal, openModal] = useState(false);
 
     return (
-        <>
-            <Layout meta={PRODUCT_DATA.title}/>
+        <Layout meta={PRODUCT_DATA.title}>
             <ProductCard
                 title={PRODUCT_DATA.title}
                 image={PRODUCT_DATA.image}
@@ -79,5 +78,5 @@ export default function Domofon2() {
                 list3={PRODUCT_DATA.list3}
             />
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-        </>
+        </Layout>
     )};

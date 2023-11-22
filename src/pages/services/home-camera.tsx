@@ -1,7 +1,4 @@
 import {useState} from "react";
-import Head from "next/head";
-import {Header} from "@/components/Header/Header";
-import {Menu} from "@/components/Menu/Menu";
 import {Modal} from "@/components/Modal/Modal";
 
 import {DONE} from "@/components/Sets/Sets";
@@ -14,8 +11,7 @@ export default function HomeCamera() {
     const [modal, openModal] = useState(false);
 
     return (
-    <>
-        <Layout meta="Установка видеонаблюдения в квартире. Видеонаблюдение через смартфоню Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре"/>
+    <Layout meta="Установка видеонаблюдения в квартире. Видеонаблюдение через смартфоню Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре">
         <main className={styles.main}>
             <div className={styles._}>
                 <h1>УСТАНОВКА ВИДЕОНАБЛЮДЕНИЯ В КВАРТИРЕ</h1>
@@ -50,5 +46,5 @@ export default function HomeCamera() {
         </main>
 
         {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-    </>
+    </Layout>
 )};

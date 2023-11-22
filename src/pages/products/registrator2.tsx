@@ -2,15 +2,14 @@ import {useState} from "react";
 import {Modal} from "@/components/Modal/Modal";
 import {ProductCard} from "@/components/ProductCard/ProductCard";
 import Layout from "@/components/Layout/Layout";
-import {PRODUCT_DATA} from "@/pages/products/productsData";
+import {PRODUCT_DATA} from "@/pages/api/productsData";
 
 export default function Registrator2() {
 
     const [modal, openModal] = useState(false);
 
     return (
-        <>
-            <Layout meta={PRODUCT_DATA.registrator2.title}/>
+        <Layout meta={PRODUCT_DATA.registrator2.title}>
             <ProductCard
                 title={PRODUCT_DATA.registrator2.title}
                 image={PRODUCT_DATA.registrator2.image}
@@ -22,5 +21,5 @@ export default function Registrator2() {
                 list2={PRODUCT_DATA.registrator2.list2}
             />
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-        </>
+        </Layout>
     )};

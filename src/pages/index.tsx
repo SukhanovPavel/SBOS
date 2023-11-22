@@ -38,7 +38,7 @@ const servicesMap = [
 ]
 
 export default function Home() {
-  //
+
   const [modal, openModal] = useState(false);
 
   return (

@@ -1,9 +1,10 @@
 import Link from "next/link";
 import {useState} from "react";
 import {TopServices} from "@/components/TopServices/TopServices";
-import styles from "@/styles/Home.module.css";
 import {Modal} from "@/components/Modal/Modal";
 import Layout from "@/components/Layout/Layout";
+
+import styles from "@/styles/Home.module.css";
 
 const servicesMap = [
     {

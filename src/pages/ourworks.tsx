@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import Layout from "@/components/Layout/Layout";
-import styles from "@/styles/Home.module.css";
-import {TopServices} from "@/components/TopServices/TopServices";
 import Link from "next/link";
 import {Modal} from "@/components/Modal/Modal";
 import {OurWorksList} from "@/components/OurWorksList/OurWorksList";
+
+import styles from "@/styles/Home.module.css";
 
 const ourWorksList = [
     {

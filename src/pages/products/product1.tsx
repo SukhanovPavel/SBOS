@@ -46,8 +46,7 @@ export default function Product1() {
     const [modal, openModal] = useState(false);
 
     return (
-        <>
-            <Layout meta={PRODUCT_DATA.title}/>
+        <Layout meta={PRODUCT_DATA.title}>
             <ProductCard
                 title={PRODUCT_DATA.title}
                 image={PRODUCT_DATA.image}
@@ -59,5 +58,5 @@ export default function Product1() {
                 list2={PRODUCT_DATA.list2}
             />
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-        </>
+        </Layout>
     )};

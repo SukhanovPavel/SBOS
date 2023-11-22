@@ -2,15 +2,14 @@ import {useState} from "react";
 import {Modal} from "@/components/Modal/Modal";
 import {ProductCard} from "@/components/ProductCard/ProductCard";
 import Layout from "@/components/Layout/Layout";
-import {PRODUCT_DATA} from "@/pages/products/productsData";
+import {PRODUCT_DATA} from "@/pages/api/productsData";
 
 export default function Ezviz3() {
 
     const [modal, openModal] = useState(false);
 
     return (
-        <>
-            <Layout meta={PRODUCT_DATA.ezviz3.title}/>
+        <Layout meta={PRODUCT_DATA.ezviz3.title}>
             <ProductCard
                 title={PRODUCT_DATA.ezviz3.title}
                 image={PRODUCT_DATA.ezviz3.image}
@@ -24,5 +23,5 @@ export default function Ezviz3() {
                 list3={PRODUCT_DATA.ezviz3.list3}
             />
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-        </>
+        </Layout>
     )};

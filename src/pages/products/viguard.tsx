@@ -2,15 +2,14 @@ import {useState} from "react";
 import {Modal} from "@/components/Modal/Modal";
 import {ProductCard} from "@/components/ProductCard/ProductCard";
 import Layout from "@/components/Layout/Layout";
-import {PRODUCT_DATA} from "@/pages/products/productsData";
+import {PRODUCT_DATA} from "@/pages/api/productsData";
 
 export default function Viguard() {
 
     const [modal, openModal] = useState(false);
 
     return (
-        <>
-            <Layout meta={PRODUCT_DATA.viguard.title}/>
+        <Layout meta={PRODUCT_DATA.viguard.title}>
             <ProductCard
                 title={PRODUCT_DATA.viguard.title}
                 image={PRODUCT_DATA.viguard.image}
@@ -22,5 +21,5 @@ export default function Viguard() {
                 list2={PRODUCT_DATA.viguard.list2}
             />
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-        </>
+        </Layout>
     )};

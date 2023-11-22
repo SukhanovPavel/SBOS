@@ -1,7 +1,4 @@
 import {useState} from "react";
-import Head from "next/head";
-import {Header} from "@/components/Header/Header";
-import {Menu} from "@/components/Menu/Menu";
 import {Modal} from "@/components/Modal/Modal";
 
 import {DONE} from "@/components/Sets/Sets";
@@ -14,8 +11,7 @@ export default function ScladCamera() {
     const [modal, openModal] = useState(false);
 
     return (
-        <>
-            <Layout meta="Видеонаблюдение на склад. Установка камер видеонаблюдения на склад. Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре"/>
+        <Layout meta="Видеонаблюдение на склад. Установка камер видеонаблюдения на склад. Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре">
             <main className={styles.main}>
                 <div className={styles._}>
                     <h1>УСТАНОВКА ВИДЕОНАБЛЮДЕНИЯ НА СКЛАДЕ</h1>
@@ -49,5 +45,5 @@ export default function ScladCamera() {
             </main>
 
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
-        </>
+        </Layout>
 )};
