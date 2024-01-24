@@ -42,7 +42,7 @@ export default function Page() {
 
     return (
         <>
-            <p>Post: {router.query.product}</p>
+            {/*<p>Post: {router.query.product}</p>*/}
             <Layout meta={data.title}>
                 <ProductCard
                     title={data.title}

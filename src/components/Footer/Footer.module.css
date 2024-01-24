@@ -1,0 +1,10 @@
+._ {
+    width: 100%;
+    background: white;
+    padding: 2rem;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

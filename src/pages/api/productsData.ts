@@ -1,7 +1,7 @@
 export const PRODUCT_DATA = [
     {
         name: "camera1",
-        title: "КАМЕРА-IP TIANDY TC-C32XN 2.8MM",
+        title: "КАМЕРА-IP TIANDY TC-C32XN 2.8MM ",
         image: "https://tiandy-russia.ru/image/cache/catalog/img_1921%281%29-437x423.png",
         link: "products/camera1",
         price: "3400 р.",
@@ -70,7 +70,7 @@ export const PRODUCT_DATA = [
     },
     {
         name: "camera2",
-        title: "КАМЕРА-IP TIANDY TC-C34XN I3/E/Y/2.8MM/V5.0",
+        title: "КАМЕРА-IP TIANDY TC-C34XN I3/E/Y/2.8MM/ V5.0",
         image: "https://tiandy-russia.ru/image/cache/catalog/img_1921%281%29-437x423.png",
         link: "products/camera2",
         price: "4900 р.",

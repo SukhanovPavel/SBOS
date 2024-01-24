@@ -73,11 +73,14 @@ a {
 button {
   cursor: pointer;
   width: 10rem;
-  height: 3rem;
+  padding: 0.5rem;
+  /*height: 2.5rem;*/
   /*background: #d72c2c;*/
   /*background: lightslategray;*/
-  background: lightcoral;
-  border-radius: 1rem;
+  background: orangered;
+  border: 2px solid lightcoral;
+  border-radius: 0.5rem;
+  /*border: none;*/
   color: white;
 }
 
