@@ -25,7 +25,6 @@ const Layout = ({meta, children}: Props) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="yandex-verification" content="5710205815328da3" />
                 <link rel="icon" href="/favicon.png" type="image/png"/>
-                {/*<meta name="mailru-domain" content="iUN55y6jm47nypeM" />*/}
                 <meta name="mailru-domain" content="IgHrPB4HT8Y7TDcy" />
             </Head>
             <Header handleClick={() => openModal(true)}/>
