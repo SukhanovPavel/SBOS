@@ -42,7 +42,7 @@ export default function Home() {
   const [modal, openModal] = useState(false);
 
   return (
-    <Layout meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре" >
+    <Layout meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре. Установка систем видеонаблюдения в Московской области" >
       <Description handleClick={() => openModal(true)} href={"#calc"}/>
       <main className={styles.main}>
 
