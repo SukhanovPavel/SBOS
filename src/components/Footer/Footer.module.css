@@ -1,10 +1,13 @@
 ._ {
     width: 100%;
-    background: white;
+    background: black;
+    color: white;
     padding: 2rem;
 }
 .links {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    text-decoration: underline;
+
 }

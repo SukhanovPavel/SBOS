@@ -19,7 +19,7 @@ const Layout = ({meta, children}: Props) => {
     return (
         <div className={styles._}>
             <Head>
-                <title>СБОС. Видеонаблюдение</title>
+                <title>Видеонаблюдение. Видеонаблюдение под ключ. Системы безопасности. СБОС</title>
                 <meta name="description" content={meta} />
                 <meta name="google-site-verification" content="IzFALKrcQFz7KVJk9bHAIA0HHB97L5X9FZn5EWwPYBk" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
