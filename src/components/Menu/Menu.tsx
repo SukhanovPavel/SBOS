@@ -53,10 +53,10 @@ export const Menu = () => {
                     <span>{ARROW}</span>
                 </Link>
 
-                <Link className={styles.card} href="/sets">
-                    <p>Комплекты</p>
-                    <span>{ARROW}</span>
-                </Link>
+                {/*<Link className={styles.card} href="/sets">*/}
+                {/*    <p>Комплекты</p>*/}
+                {/*    <span>{ARROW}</span>*/}
+                {/*</Link>*/}
 
                 <Link className={styles.card} href="/contacts">
                     <p>Контакты</p>

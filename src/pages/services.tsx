@@ -77,10 +77,6 @@ const Services = () => {
                     allServicesButton={false}
                 />
 
-                <h2>
-                    <Link href="/">Back to home</Link>
-                </h2>
-
                 {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
             </main>
         </Layout>

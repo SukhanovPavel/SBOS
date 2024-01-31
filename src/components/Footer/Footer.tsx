@@ -31,6 +31,17 @@ const Footer = () => {
                     Контакты
                 </Link>
             </div>
+            <div className={styles.contacts}>
+                <span>VK: <Link href="https://vk.com/sbospro" target="_blank">vk.com/sbospro</Link></span>
+                <span>mail: <Link href="mailto:mail@sbos.pro">mail@sbos.pro</Link></span>
+            </div>
+
+            <div>
+                ООО СБОС входит в группу компаний:
+                <p><Link href="https://mosobl-telecom.ru/" target="_blank">ООО "М.О.Телеком"</Link></p>
+                <p><Link href="https://высота-шатура.рф" target="_blank">Высота</Link></p>
+                <p><Link href="https://energylite.ru/" target="_blank">Energylite</Link></p>
+            </div>
         </div>
     );
 };

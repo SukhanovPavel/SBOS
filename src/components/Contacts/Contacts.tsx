@@ -26,7 +26,7 @@ export const Contacts = ({handleClick}: Props) => (
             </div>
             <div>
                 <div>Email</div>
-                <a className={styles.phone} href="mailto:mail@sbos.ru">mail@sbos.ru</a>
+                <a className={styles.phone} href="mailto:mail@sbos.pro">mail@sbos.pro</a>
             </div>
             <button onClick={handleClick}>Обратный звонок</button>
         </div>

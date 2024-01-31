@@ -1,13 +1,23 @@
 ._ {
     width: 100%;
-    background: black;
-    color: white;
+    /*background: black;*/
+    /*color: white;*/
+    color: lightslategrey;
+    background: whitesmoke;
     padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+._ a {
+    text-decoration: underline;
 }
 .links {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    text-decoration: underline;
-
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
