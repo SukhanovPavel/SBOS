@@ -20,7 +20,7 @@
 .grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, minmax(15%, 20%));
+    grid-template-columns: repeat(4, minmax(15%, 20%));
     justify-content: space-around;
     max-width: 100%;
 }
