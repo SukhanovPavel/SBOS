@@ -38,7 +38,7 @@ const Footer = () => {
 
             <div>
                 ООО СБОС входит в группу компаний:
-                <p><Link href="https://mosobl-telecom.ru/" target="_blank">ООО "М.О.Телеком"</Link></p>
+                <p><Link href="https://mosobl-telecom.ru/" target="_blank">М.О.Телеком</Link></p>
                 <p><Link href="https://высота-шатура.рф" target="_blank">Высота</Link></p>
                 <p><Link href="https://energylite.ru/" target="_blank">Energylite</Link></p>
             </div>
