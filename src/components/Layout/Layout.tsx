@@ -26,6 +26,10 @@ const Layout = ({meta, children}: Props) => {
                 <meta name="yandex-verification" content="5710205815328da3" />
                 <link rel="icon" href="/favicon.png" type="image/png"/>
                 <meta name="mailru-domain" content="IgHrPB4HT8Y7TDcy" />
+                <meta property="og:title" content="ООО СБОС. Видеонаблюдение под ключ. Системы безопасности. Охранные системы"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.sbos.pro/" />
+                <meta property="og:image" content="https://www.hikvision.com/content/dam/hikvision/legacy/ueditor/net/upload/2016-03-24/62683ad7-dd6f-439c-b714-4abedd737933.jpg"/>
             </Head>
             <Header handleClick={() => openModal(true)}/>
             <div>
