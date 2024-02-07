@@ -30,6 +30,8 @@ const Layout = ({meta, children}: Props) => {
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.sbos.pro/" />
                 <meta property="og:image" content="https://www.hikvision.com/content/dam/hikvision/legacy/ueditor/net/upload/2016-03-24/62683ad7-dd6f-439c-b714-4abedd737933.jpg"/>
+                <meta property="og:image:width" content="1200"/>
+                <meta property="og:image:height" content="630"/>
             </Head>
             <Header handleClick={() => openModal(true)}/>
             <div>
