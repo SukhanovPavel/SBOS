@@ -3,9 +3,9 @@ import Head from "next/head";
 import {Header} from "@/components/Header/Header";
 import {Menu} from "@/components/Menu/Menu";
 import {Modal} from "@/components/Modal/Modal";
+import Footer from "@/components/Footer/Footer";
 
 import styles from "./Layout.module.css";
-import Footer from "@/components/Footer/Footer";
 
 type Props = {
     meta: string;
@@ -28,6 +28,9 @@ const Layout = ({meta, children}: Props) => {
                 <meta name="mailru-domain" content="IgHrPB4HT8Y7TDcy" />
             </Head>
             <Header handleClick={() => openModal(true)}/>
+            <div>
+                <img src="https://mc.yandex.ru/watch/96388427" style={{position:"absolute", left:"-9999px"}} alt="" />
+            </div>
             <Menu />
             {children}
             {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
