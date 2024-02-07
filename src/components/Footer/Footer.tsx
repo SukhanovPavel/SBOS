@@ -19,14 +19,6 @@ const Footer = () => {
                     Товары
                 </Link>
 
-                <Link className={styles.card} href="/ourworks" >
-                    Наши работы
-                </Link>
-
-                <Link className={styles.card} href="/sets">
-                    Готовые наборы
-                </Link>
-
                 <Link className={styles.card} href="/contacts">
                     Контакты
                 </Link>
