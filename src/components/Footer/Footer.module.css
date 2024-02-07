@@ -3,7 +3,8 @@
     /*background: black;*/
     /*color: white;*/
     color: lightslategrey;
-    background: whitesmoke;
+    /*background: whitesmoke;*/
+    background: white;
     padding: 2rem;
     display: flex;
     justify-content: space-around;
