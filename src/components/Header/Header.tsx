@@ -4,6 +4,7 @@ import {ScrollButton} from "@/components/ScrollButton/ScrollButton";
 import Image from "next/image";
 
 import LOGO from "../../../public/images/logo/sbos_logo_transparent.png";
+import NEWLOGO from "../../../public/newLogo.png"
 import LOGO_MOBILE from "../../../public/images/logo/sbos_logo.png";
 import {useEffect, useState} from "react";
 
