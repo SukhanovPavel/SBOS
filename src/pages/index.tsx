@@ -9,9 +9,9 @@ import {Modal} from "@/components/Modal/Modal";
 import {useState} from "react";
 import {Description} from "@/components/Description/Description";
 import {Calc} from "@/components/Calc/Calc";
+import Layout from "@/components/Layout/Layout";
 
 import styles from '@/styles/Home.module.css';
-import Layout from "@/components/Layout/Layout";
 
 const servicesMap = [
     {
