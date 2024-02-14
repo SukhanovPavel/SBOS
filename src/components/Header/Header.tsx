@@ -4,7 +4,6 @@ import {ScrollButton} from "@/components/ScrollButton/ScrollButton";
 import Image from "next/image";
 
 import LOGO from "../../../public/images/logo/sbos_logo_transparent.png";
-import NEWLOGO from "../../../public/newLogo.png"
 import LOGO_MOBILE from "../../../public/images/logo/sbos_logo.png";
 import {useEffect, useState} from "react";
 
@@ -25,7 +24,7 @@ export const Header = ({handleClick}: Props) => {
                             src={LOGO}
                             alt="logo"
                             width={250}
-                            height={100}
+                            height={110}
                         /> :
                         <><Image
                             alt="logo"

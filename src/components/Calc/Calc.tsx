@@ -7,7 +7,6 @@ import {CalcQuestTwo} from "@/components/Calc/CalcQuestTwo/CalcQuestTwo";
 import {CalcQuestThree} from "@/components/Calc/CalcQuestThree/CalcQuestThree";
 import {CalcQuestFour} from "@/components/Calc/CalcQuestFour/CalcQuestFour";
 import {CalcQuestFive} from "@/components/Calc/CalcQuestFive/CalcQuestFive";
-import {it} from "node:test";
 
 
 export const Calc = () => {
@@ -46,7 +45,6 @@ export const Calc = () => {
 
     const [width, setWidth] = useState(0);
 
-    // Similar to componentDidMount and componentDidUpdate:
     useEffect(() => setWidth(document.documentElement.clientWidth));
 
     return (

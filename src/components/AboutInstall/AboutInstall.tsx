@@ -11,7 +11,11 @@ export const AboutInstall = ({handleClick}: Props) => (
         <h2>УСТАНОВКА СИСТЕМ ВИДЕОНАБЛЮДЕНИЯ</h2>
         <div className={styles.blocks}>
             <div className={styles.block}>
-                <img className={styles.img} src="https://videonablydenie.ru/assets/img/videonabludenie2-min.jpg"/>
+                <img
+                    className={styles.img}
+                    src="https://videonablydenie.ru/assets/img/videonabludenie2-min.jpg"
+                    alt="video camera install"
+                />
             </div>
             <div className={styles.block}>
                 <p>
