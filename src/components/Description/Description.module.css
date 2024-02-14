@@ -7,8 +7,9 @@
     padding: 2rem;
     max-width: 100%;
     width: calc(100% - 4rem);
-    /*height: calc(100vh - 12rem);*/
-
+    /*height: 100vh;*/
+    /*background-image: url('../../../public/sbosBG.jpeg');*/
+    /*background-size: cover;*/
 }
 
 .descriptionBlock {
@@ -19,7 +20,19 @@
     width: 48%;
     height: 100%;
 }
-
+.descriptionBlock h1 {
+    color: #d72c2c;
+}
+.priceButton {
+    background: none;
+    width: 80%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    color: #d72c2c;
+    font-size: 1.3rem;
+    margin: 0 auto;
+}
 .descriptionImage {
     width: 100%;
     border: solid white;

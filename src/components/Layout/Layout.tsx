@@ -33,7 +33,7 @@ const Layout = ({meta, children}: Props) => {
                 <meta property="og:image:width" content="1200"/>
                 <meta property="og:image:height" content="630"/>
             </Head>
-            <Header handleClick={() => openModal(true)}/>
+            {/*<Header handleClick={() => openModal(true)}/>*/}
             <div>
                 <img src="https://mc.yandex.ru/watch/96388427" style={{position:"absolute", left:"-9999px"}} alt="" />
             </div>
