@@ -13,7 +13,7 @@ export const Description = ({handleClick, href}: Props) => (
                 СИСТЕМЫ БЕЗОПАСНОСТИ. ОХРАННЫЕ СИСТЕМЫ
             </h1>
             <h2 className={styles.logoText}>Проектирование и монтаж охранных систем и видеонаблюдения под ключ</h2>
-            <h2>Система "Умный дом"</h2>
+            <h2>Система &quot;Умный дом&quot;</h2>
             <button className={styles.priceButton} onClick={handleClick}>Узнать цену</button>
             {/*<div className={styles.par}>*/}
             {/*    <div className={styles.twoP}>*/}
