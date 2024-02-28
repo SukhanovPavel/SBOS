@@ -1,7 +1,7 @@
 .calc {
     font-family: var(--font-mono);
     background: white;
-    border-radius: 2rem;
+    border-radius: 0.1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -31,10 +31,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.calcImg {
-    border-radius: 2rem;
 }
 
 .calcFlex {

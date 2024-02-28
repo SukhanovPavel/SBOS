@@ -27,10 +27,6 @@
     justify-content: center;
 }
 
-.calcImg {
-    border-radius: 2rem;
-}
-
 .calcFlex {
     display: flex;
     justify-content: space-around;

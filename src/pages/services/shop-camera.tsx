@@ -25,7 +25,6 @@ export default function ShoppCamera() {
                         </div>
                         <div className={styles.block}>
                             <h3>Цена от 63990 руб.</h3>
-                            <div>Кол-во камер: 16</div>
                             <div>Срок установки: 1-3 дня</div>
                             <button onClick={() => openModal(true)}>Заказать</button>
                             <p>

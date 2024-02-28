@@ -25,7 +25,6 @@ export default function EntranceCamera() {
                         </div>
                         <div className={styles.block}>
                             <h3>Цена от 27990 руб.</h3>
-                            <div>Кол-во камер: 5</div>
                             <div>Срок установки: 1-2 дня</div>
                             <button onClick={() => openModal(true)}>Заказать</button>
                             <p>

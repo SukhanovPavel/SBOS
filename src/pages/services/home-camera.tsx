@@ -25,7 +25,6 @@ export default function HomeCamera() {
                     </div>
                     <div className={styles.block}>
                         <h3>Цена от 4990 руб.</h3>
-                        <div>Кол-во камер: 1</div>
                         <div>Срок установки: 1 день</div>
                         <button onClick={() => openModal(true)}>Заказать</button>
                         <p>

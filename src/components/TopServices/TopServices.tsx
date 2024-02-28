@@ -14,6 +14,7 @@ type Props = {
     titleH2?: string;
     allServicesButton: boolean;
 };
+
 export const TopServices = ({servicesMap, titleH1, titleH2, allServicesButton}: Props) => (
     <div className={styles._}>
         {titleH1 ? <h1>{titleH1}</h1> : null}
