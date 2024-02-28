@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {FaArrowCircleUp} from 'react-icons/fa';
+import {FaAngleUp} from 'react-icons/fa';
 
 import styles from "./ScrollButton.module.css";
 export const ScrollButton = () => {
@@ -30,10 +30,10 @@ export const ScrollButton = () => {
     }, [scroll]);
 
     return (
-        <button className={styles._}>
-            <FaArrowCircleUp
+        <button className={styles._}
+                style={{display: visible ? 'inline' : 'none'}}>
+            <FaAngleUp
                 onClick={() => setScroll(scroll + 1)}
-                style={{display: visible ? 'inline' : 'none', fill: "rgb(255,200,74,1)"}}
             />
         </button>
     );

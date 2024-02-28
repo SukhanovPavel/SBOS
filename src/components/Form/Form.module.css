@@ -22,7 +22,7 @@
 }
 .customFile {
     cursor: pointer;
-    width: 20rem;
+    width: 30rem;
     color: lightslategray;
     border-radius: 1rem;
     display: flex;
@@ -37,7 +37,7 @@
 .input input {
     width: 100%;
     height: 2.5rem;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     padding-left: 1rem;
 }
 

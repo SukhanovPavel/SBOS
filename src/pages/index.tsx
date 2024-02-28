@@ -6,7 +6,7 @@ import {Advantages} from "@/components/Advantages/Advantages";
 import {Answers} from "@/components/Answers/Answers";
 import {Contacts} from "@/components/Contacts/Contacts";
 import {Modal} from "@/components/Modal/Modal";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Description} from "@/components/Description/Description";
 import {Calc} from "@/components/Calc/Calc";
 import Layout from "@/components/Layout/Layout";
@@ -35,7 +35,7 @@ const servicesMap = [
         description: "Установим современную систему для охраны. Обеспечим круглосуточный контроль за подъездом.\n" +
                      "Множество вариантов систем видеонаблюдения."
     },
-]
+];
 
 export default function Home() {
 

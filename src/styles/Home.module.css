@@ -8,6 +8,8 @@
   min-height: 100vh;
   font-family: var(--font-mono);
   background: inherit;
+  /*background: #FDF5DF;*/
+  /*background: #5EBEC4;*/
   /*font-family: 'Ubuntu', sans-serif;*/
   /*overflow-y: auto;*/
 }

@@ -15,7 +15,7 @@
 .img {
     width: 100%;
     height: 70%;
-    border-radius: 1rem;
+    /*border-radius: 0.5rem;*/
 }
 
 .service {
@@ -56,7 +56,8 @@
     }
 
     .services {
-        display: flex;
+        /*display: flex;*/
+
         padding: 0 1rem;
     }
     .service {
@@ -68,7 +69,7 @@
     }
     .img {
         height: 100%;
-        border-radius: 1rem;
+        /*border-radius: 1rem;*/
     }
     .desc {
         height: 100%;

@@ -1,18 +1,20 @@
 ._ {
-    /*display: block;*/
+    padding: 1rem 1rem 0 1rem;
     position: fixed;
-    width: 4rem;
-    height: 6rem;
-    right: 1%;
-    bottom: 40px;
+    /*width: 4rem;*/
+    /*height: 4rem;*/
+    right: 0.5rem;
+    bottom: 0.5rem;
     font-size: 4rem;
     z-index: 1;
     cursor: pointer;
-    color: green;
-    background: none;
+    background: rgba(100, 100, 100, 0.2);
+    border-radius: 0.3rem;
     border: none;
 }
-
+._ svg {
+    fill: #d72c2c;
+}
 .none {
     display: none;
 }

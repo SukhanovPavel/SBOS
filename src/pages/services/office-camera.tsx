@@ -25,7 +25,6 @@ export default function OfficeCamera() {
                         </div>
                         <div className={styles.block}>
                             <h3>Цена от 13490 руб.</h3>
-                            <div>Кол-во камер: 2</div>
                             <div>Срок установки: 1 день</div>
                             <button onClick={() => openModal(true)}>Заказать</button>
                             <p>
