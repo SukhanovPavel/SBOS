@@ -6,12 +6,13 @@ import {Advantages} from "@/components/Advantages/Advantages";
 import {Answers} from "@/components/Answers/Answers";
 import {Contacts} from "@/components/Contacts/Contacts";
 import {Modal} from "@/components/Modal/Modal";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Description} from "@/components/Description/Description";
 import {Calc} from "@/components/Calc/Calc";
 import Layout from "@/components/Layout/Layout";
 
 import styles from '@/styles/Home.module.css';
+import TgWidget from "@/components/tgWidget/tgWidget";
 
 const servicesMap = [
     {
