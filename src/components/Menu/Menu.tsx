@@ -109,6 +109,10 @@ export const Menu = () => {
                     Товары
                 </Link>
 
+                <Link className={styles.card} href="/news">
+                    Новости
+                </Link>
+
                 {/*<Link className={styles.card} href="/ourworks" >*/}
                 {/*    <p>Наши работы</p>*/}
                 {/*    <span>{ARROW}</span>*/}

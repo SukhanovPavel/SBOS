@@ -1,0 +1,19 @@
+._ h3 {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.content {
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+._ img {
+    width: 35%;
+}
+
+._ pre {
+    font-size: 1rem;
+    white-space: pre-wrap;
+}
