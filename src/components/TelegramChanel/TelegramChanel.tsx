@@ -14,7 +14,6 @@ const TelegramChannel = () => {
                 src="https://telegram.org/js/telegram-widget.js?22"
                 data-telegram-post={`sbosshatura/13`}
                 data-width="100%"
-                strategy="lazyOnload"
             />
             <iframe
                 id={`telegram-post-sbosshatura-13`}
@@ -34,7 +33,6 @@ const TelegramChannel = () => {
                 src="https://telegram.org/js/telegram-widget.js?22"
                 data-telegram-post={`sbosshatura/12`}
                 data-width="100%"
-                strategy="lazyOnload"
             />
             <iframe
                 id={`telegram-post-sbosshatura-12`}
