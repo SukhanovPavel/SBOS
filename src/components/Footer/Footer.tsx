@@ -19,6 +19,10 @@ const Footer = () => {
                     Товары
                 </Link>
 
+                <Link className={styles.card} href="/news">
+                    Новости
+                </Link>
+
                 <Link className={styles.card} href="/contacts">
                     Контакты
                 </Link>
