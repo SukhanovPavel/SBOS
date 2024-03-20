@@ -12,6 +12,7 @@ import {Calc} from "@/components/Calc/Calc";
 import Layout from "@/components/Layout/Layout";
 
 import styles from '@/styles/Home.module.css';
+import Head from "next/head";
 
 const servicesMap = [
     {
@@ -42,30 +43,35 @@ export default function Home() {
     const [modal, openModal] = useState(false);
 
     return (
-        <Layout
-            meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре. Установка систем видеонаблюдения в Московской области">
-            <Description handleClick={() => openModal(true)} href={"#calc"}/>
-            <main className={styles.main}>
+        <>
+            <Head>
+                <link rel="canonical"/>
+            </Head>
+            <Layout
+                meta="Видеонаблюдение, системы безопасности, камеры, оборудование. Установка систем видеонаблюдения в Шатуре. Установка систем видеонаблюдения в Московской области">
+                <Description handleClick={() => openModal(true)} href={"#calc"}/>
+                <main className={styles.main}>
 
-                <Calc/>
+                    <Calc/>
 
-                <Sets handleClick={() => openModal(true)}/>
+                    <Sets handleClick={() => openModal(true)}/>
 
-                <TopServices titleH2="ПОПУЛЯРНЫЕ УСЛУГИ" servicesMap={servicesMap} allServicesButton/>
+                    <TopServices titleH2="ПОПУЛЯРНЫЕ УСЛУГИ" servicesMap={servicesMap} allServicesButton/>
 
-                <WorkScheme/>
+                    <WorkScheme/>
 
-                <AboutInstall handleClick={() => openModal(true)}/>
+                    <AboutInstall handleClick={() => openModal(true)}/>
 
-                <Advantages/>
+                    <Advantages/>
 
-                <Answers/>
+                    <Answers/>
 
-                <Contacts handleClick={() => openModal(true)}/>
+                    <Contacts handleClick={() => openModal(true)}/>
 
-                {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
+                    {modal ? <Modal handleCloseModal={() => openModal(false)}/> : null}
 
-            </main>
-        </Layout>
+                </main>
+            </Layout>
+        </>
     )
 }
