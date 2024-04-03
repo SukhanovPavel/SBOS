@@ -6,7 +6,7 @@ import styles from "./TelegramChanel.module.css";
 
 const TelegramChannel = () => {
 
-    const arr = ['14', '13', '12', '11'];
+    const arr = ['18', '17', '16', '15'];
 
     return (
         <div className={styles._}>
