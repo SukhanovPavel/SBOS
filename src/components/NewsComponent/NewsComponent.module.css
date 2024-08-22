@@ -1,0 +1,20 @@
+._ {
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+._ h1 {
+    margin-top: 5rem;
+}
+.news {
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+    background: rgb(220, 220, 220, 0.4);
+}
+.text {
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+.img {
+    width: 30%;
+}
